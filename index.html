@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<!-- EFECTO MATRIX DE FONDO -->
+<canvas id="matrix-canvas"></canvas>
+
 <header>
     <div class="logo">
         <h1>Brian David Lavandera</h1>
@@ -25,71 +28,71 @@
     </nav>
 </header>
 
-    <main>
-        <section id="sobre-mi" class="hero">
-            <div class="hero-content">
-                <h2>Hola, soy Desarrollador</h2>
-                <p>Programador Full Stack recibido en Argentina Programa (2022) y estudiante de desarrollo de software. En mi día a día me desempeño en el ámbito administrativo, enfocado en la verificación de datos y la optimización de procesos, combinando esa experiencia con mi pasión por el diseño de interfaces web modernas y funcionales.</p>
-                <a href="#contacto" class="btn">Contáctame</a>
+<main>
+    <section id="sobre-mi" class="hero">
+        <div class="hero-content">
+            <h2>Hola, soy Brian</h2>
+            <p>Programador Full Stack recibido en Argentina Programa (2022) y estudiante de desarrollo de software. En mi día a día me desempeño en el ámbito administrativo, enfocado en la verificación de datos y la optimización de procesos, combinando esa experiencia con mi pasión por el diseño de interfaces web modernas y funcionales.</p>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="hero-img">
+            <div class="img-container">
+                <!-- Foto normal inicial -->
+                <img id="profile-img" src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b" alt="Foto de perfil de profesional">
             </div>
-            <div class="hero-img">
-                <img src="img/perfil.jpg" alt="Foto de perfil de profesional">
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Desarrollo Full Stack</h3>
+                <p>Creación de aplicaciones web completas, conectando interfaces responsivas con la lógica del servidor y bases de datos.</p>
             </div>
-        </section>
-
-<section id="habilidades" class="skills">
-    <h2>Mis Habilidades</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>Desarrollo Full Stack</h3>
-            <p>Creación de aplicaciones web completas, conectando interfaces responsivas con la lógica del servidor y bases de datos.</p>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Desarrollo dinámico de interfaces, manipulación del DOM y lógica de programación moderna para la web.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Desarrollo backend orientado a objetos, estructuración de sistemas y lógica robusta de programación.</p>
+            </div>
         </div>
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Desarrollo dinámico de interfaces, manipulación del DOM y lógica de programación moderna para la web.</p>
+    </section>
+
+    <section id="personal" class="personal-section">
+        <h2>Sección Personal</h2>
+        <div class="personal-container">
+            <div class="personal-text">
+                <p>En mi tiempo libre me gusta desconectar un poco del estudio creando pequeños prototipos y experimentando con el desarrollo de videojuegos. Disfruto mucho probando nuevas tecnologías, armando lógicas de juego y resolviendo desafíos de lógica y estrategia por pura diversión.</p>
+            </div>
+            <div class="personal-img"></div>
         </div>
-        <div class="skill-card">
-            <h3>Java</h3>
-            <p>Desarrollo backend orientado a objetos, estructuración de sistemas y lógica robusta de programación.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="personal" class="personal-section">
-    <h2>Sección Personal</h2>
-    <div class="personal-container">
-        <div class="personal-text">
-            <p>En mi tiempo libre me gusta desconectar un poco del estudio creando pequeños prototipos y experimentando con el desarrollo de videojuegos. Disfruto mucho probando nuevas tecnologías, armando lógicas de juego y resolviendo desafíos de lógica y estrategia por pura diversión.</p>
-        </div>
-        <div class="personal-img">
-            <img src="" alt="Captura de entorno de desarrollo de videojuegos">
-        </div>
-    </div>
-</section>
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
 
-        <section id="contacto" class="contact">
-            <h2>Contacto</h2>
-            
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-                </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required placeholder="tu@correo.com">
-                </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+            </div>
 
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
-                </div>
-
-                <button type="submit" class="btn">Enviar Mensaje</button>
-            </form>
-        </section>
-    </main>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+</main>
 
 <footer class="footer-portfolio">
     <p>&copy; Gracias por visitarme, puede seguirme en mi GitHub.</p>
@@ -99,6 +102,170 @@
         </svg>
     </a>
 </footer>
+
+<!-- SCRIPT COMPLETO -->
+<script>
+const canvas = document.getElementById('matrix-canvas');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const codeSymbols = [
+    'class', 'public', 'private', 'void', 'int', 'String', 'var', 'let', 'const', 
+    'async', 'await', 'return', 'if', 'else', 'for', 'while', 'new', 'this', 
+    '=>', '==', '===', '!=', '++', '--', '&&', '||', '{}', '[]', '()', ';', 
+    'Console.WriteLine', 'console.log', 'System.out.println', 'try', 'catch', 'null',
+    '#error', '0xDEADBEEF', 'undefined', 'NaN', 'Exception'
+];
+
+const fontSize = 12;
+const columns = Math.floor(canvas.width / 55); 
+
+const rainDrops = [];
+for (let x = 0; x < columns; x++) {
+    rainDrops[x] = {
+        x: x * 55 + (Math.random() * 20 - 10),
+        y: Math.random() * canvas.height,
+        speed: Math.random() * 2.5 + 2,
+        text: codeSymbols[Math.floor(Math.random() * codeSymbols.length)],
+        glitchTimer: 0
+    };
+}
+
+// Colores de los temas (sin cian)
+const colores = ['#eab308', '#ef4444', '#ff00ff', '#0F0'];
+
+// Fotos sincronizadas con los colores
+const fotos = [
+    'https://lh3.googleusercontent.com/d/1isqRsMEZBWNMPweWzoeaa8s108_pn8Zk', // Amarillo (#eab308)
+    'https://lh3.googleusercontent.com/d/1KVdBH0uUtc29l6zPeuMrIZAITofvhgu1', // Rojo (#ef4444)
+    'https://lh3.googleusercontent.com/d/179MP_Cf1hx6ydQicZrbJWzWjsZvCqBTl', // Fucsia (#ff00ff)
+    'https://lh3.googleusercontent.com/d/1Naw2Q5hYvy03yNSh5FCp3wzy3zgr8REm'  // Verde (#0F0)
+];
+
+let indiceColor = -1; // -1 significa estado inicial (foto normal y celeste por defecto)
+const profileImg = document.getElementById('profile-img');
+
+const mouse = {
+    x: null,
+    y: null,
+    radius: 140
+};
+
+window.addEventListener('mousemove', (event) => {
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
+});
+
+window.addEventListener('mouseout', () => {
+    mouse.x = null;
+    mouse.y = null;
+});
+
+function draw() {
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.12)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.font = 'bold ' + fontSize + 'px monospace';
+
+    for (let i = 0; i < rainDrops.length; i++) {
+        let drop = rainDrops[i];
+        
+        let renderX = drop.x;
+        let renderY = drop.y;
+        let drawText = drop.text;
+
+        drop.glitchTimer++;
+        if (drop.glitchTimer > 30 && Math.random() < 0.15) {
+            drawText = codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
+            renderX += (Math.random() * 16 - 8);
+            drop.glitchTimer = 0;
+        }
+
+        let currentColor = (indiceColor === -1) ? '#38bdf8' : colores[indiceColor];
+
+        if (mouse.x !== null && mouse.y !== null) {
+            let dx = renderX - mouse.x;
+            let dy = renderY - mouse.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < mouse.radius) {
+                let angle = Math.atan2(dy, dx);
+                let force = (mouse.radius - distance) / mouse.radius;
+                renderX += Math.cos(angle) * force * 55;
+                renderY += Math.sin(angle) * force * 55;
+                ctx.fillStyle = '#ffffff'; 
+            } else {
+                ctx.fillStyle = currentColor;
+            }
+        } else {
+            ctx.fillStyle = currentColor;
+        }
+
+        ctx.fillText(drawText, renderX, renderY);
+
+        drop.y += drop.speed;
+
+        if (drop.y > canvas.height + 20) {
+            drop.y = -20;
+            drop.text = codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
+            drop.speed = Math.random() * 2.5 + 2;
+        }
+    }
+}
+
+setInterval(draw, 25);
+
+const heroText = document.querySelector('.hero-content h2');
+const originalText = "Hola, soy Brian";
+let charIndex = 0;
+
+function typeEffect() {
+    if (heroText) {
+        if (charIndex < originalText.length) {
+            heroText.textContent = originalText.substring(0, charIndex + 1) + "_";
+            charIndex++;
+            setTimeout(typeEffect, 100);
+        } else {
+            heroText.textContent = originalText;
+        }
+    }
+}
+typeEffect();
+
+function hexToRgb(hex) {
+    let r = 0, g = 0, b = 0;
+    if (hex.length == 4) {
+        r = parseInt(hex[1]+hex[1], 16); g = parseInt(hex[2]+hex[2], 16); b = parseInt(hex[3]+hex[3], 16);
+    } else if (hex.length == 7) {
+        r = parseInt(hex[1]+hex[2], 16); g = parseInt(hex[3]+hex[4], 16); b = parseInt(hex[5]+hex[6], 16);
+    }
+    return `${r}, ${g}, ${b}`;
+}
+
+// Al hacer clic cambia de color y de foto secuencialmente
+window.addEventListener('click', () => {
+    indiceColor = (indiceColor + 1) % colores.length;
+    let color = colores[indiceColor];
+    
+    document.documentElement.style.setProperty('--accent-color', color);
+    document.documentElement.style.setProperty('--accent-rgb', hexToRgb(color));
+
+    if (profileImg) {
+        profileImg.style.opacity = '0';
+        setTimeout(() => {
+            profileImg.src = fotos[indiceColor];
+            profileImg.style.opacity = '1';
+        }, 150);
+    }
+});
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+</script>
 
 </body>
 </html>
