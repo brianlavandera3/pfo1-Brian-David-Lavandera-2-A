@@ -18,7 +18,18 @@
     <div class="logo">
         <h1>Brian David Lavandera</h1>
     </div>
-    <nav>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="main-nav">
         <ul>
             <li><a href="#sobre-mi">Inicio</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
@@ -245,7 +256,10 @@ function hexToRgb(hex) {
 }
 
 // Al hacer clic cambia de color y de foto secuencialmente
-window.addEventListener('click', () => {
+window.addEventListener('click', (e) => {
+    // Evitar que el menú hamburguesa o sus links cambien los colores al clickear
+    if (e.target.closest('.menu-toggle') || e.target.closest('#main-nav')) return;
+
     indiceColor = (indiceColor + 1) % colores.length;
     let color = colores[indiceColor];
     
@@ -264,6 +278,30 @@ window.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+});
+
+// --- LÓGICA DEL MENÚ HAMBURGUESA ---
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
+const navLinks = document.querySelectorAll('#main-nav ul li a');
+
+// Abrir/Cerrar menú al tocar el botón hamburguesa
+menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('activo');
+    menuToggle.classList.toggle('activo');
+    
+    // Accesibilidad
+    let expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !expanded);
+});
+
+// Cerrar el menú automáticamente cuando se elige una sección
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mainNav.classList.remove('activo');
+        menuToggle.classList.remove('activo');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    });
 });
 </script>
 
