@@ -1,10 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-<meta charset="utf-8">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Mi página web</h1>
-<p>Estoy aprendiendo desarrollo web..</p>
+
+<header>
+    <div class="logo">
+        <h1>Brian David Lavandera</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#personal">Intereses</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="sobre-mi" class="hero">
+            <div class="hero-content">
+                <h2>Hola, soy Desarrollador</h2>
+                <p>Programador Full Stack recibido en Argentina Programa (2022) y estudiante de desarrollo de software. En mi día a día me desempeño en el ámbito administrativo, enfocado en la verificación de datos y la optimización de procesos, combinando esa experiencia con mi pasión por el diseño de interfaces web modernas y funcionales.</p>
+                <a href="#contacto" class="btn">Contáctame</a>
+            </div>
+            <div class="hero-img">
+                <img src="img/perfil.jpg" alt="Foto de perfil de profesional">
+            </div>
+        </section>
+
+<section id="habilidades" class="skills">
+    <h2>Mis Habilidades</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Desarrollo Full Stack</h3>
+            <p>Creación de aplicaciones web completas, conectando interfaces responsivas con la lógica del servidor y bases de datos.</p>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Desarrollo dinámico de interfaces, manipulación del DOM y lógica de programación moderna para la web.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Java</h3>
+            <p>Desarrollo backend orientado a objetos, estructuración de sistemas y lógica robusta de programación.</p>
+        </div>
+    </div>
+</section>
+
+<section id="personal" class="personal-section">
+    <h2>Sección Personal</h2>
+    <div class="personal-container">
+        <div class="personal-text">
+            <p>En mi tiempo libre me gusta desconectar un poco del estudio creando pequeños prototipos y experimentando con el desarrollo de videojuegos. Disfruto mucho probando nuevas tecnologías, armando lógicas de juego y resolviendo desafíos de lógica y estrategia por pura diversión.</p>
+        </div>
+        <div class="personal-img">
+            <img src="" alt="Captura de entorno de desarrollo de videojuegos">
+        </div>
+    </div>
+</section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Gracias por visitarme.</p>
+    </footer>
+
 </body>
 </html>
