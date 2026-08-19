@@ -1,320 +1,1432 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio personal de Brian David Lavandera, estudiante de Desarrollo de Software.">
-    <meta name="author" content="Brian David Lavandera">
-    <title>Brian David Lavandera | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfolio personal de Brian David Lavandera, estudiante de Desarrollo de Software.">
+
+    <meta
+        name="author"
+        content="Brian David Lavandera">
+
+    <title>
+        Brian David Lavandera | Portfolio
+    </title>
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
 </head>
+
+
 <body>
 
-    <header class="site-header">
-        <div class="scroll-progress" id="scroll-progress"></div>
-        <a href="#inicio" class="logo"><span>&gt;</span> BRIAN.L</a>
+<!-- =====================================================
+     FONDO MATRIX SUTIL
+     Capa visual: delante del fondo, detrás del contenido.
+     ===================================================== -->
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
-            <span></span><span></span><span></span>
+
+
+<header class="site-header">
+
+    <div
+        class="scroll-progress"
+        id="scroll-progress">
+    </div>
+
+
+    <a
+        href="#inicio"
+        class="logo">
+
+        <span>&gt;</span> BRIAN.D.L
+
+    </a>
+
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <nav
+        id="main-nav"
+        aria-label="Navegación principal">
+
+        <ul>
+
+            <li>
+                <a href="#inicio">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="#habilidades">
+                    Habilidades
+                </a>
+            </li>
+
+            <li>
+                <a href="#personal">
+                    Personal
+                </a>
+            </li>
+
+            <li>
+                <a href="#contacto">
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section
+    id="inicio"
+    class="hero">
+
+
+    <div class="hero-main">
+
+
+        <div class="hero-content reveal-item">
+
+
+            <p class="eyebrow">
+                01 / SOFTWARE DEVELOPER
+            </p>
+
+
+            <!-- TYPING COMPLETO -->
+
+            <h1>
+
+                <span
+                    id="typing-name">
+                </span>
+
+                <span class="cursor">
+                    _
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Soy estudiante de Desarrollo de Software y me interesa crear soluciones mediante código, lógica y creatividad.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <a
+                    href="#contacto"
+                    class="btn btn-primary">
+
+                    Hablemos
+                    <span>→</span>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/brianlavandera3"
+                    class="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    GitHub
+                    <span>↗</span>
+
+                </a>
+
+
+            </div>
+
+
+            <div class="status-line">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    ESTUDIANDO DESARROLLO DE SOFTWARE
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="hero-visual reveal-item">
+
+
+            <div class="profile-frame">
+
+
+                <span class="frame-label top-left">
+                    PROFILE
+                </span>
+
+
+                <span class="frame-label bottom-right">
+                    ONLINE
+                </span>
+
+
+                <img
+                    src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b"
+                    alt="Foto de perfil de Brian David Lavandera">
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- HISTORIA -->
+
+    <div class="story">
+
+
+        <div class="story-header reveal-item">
+
+
+            <div>
+
+                <p class="story-label">
+                    MY STORY
+                </p>
+
+
+                <h2>
+                    Cómo llegué<br>
+                    hasta acá.
+                </h2>
+
+            </div>
+
+
+            <p class="story-intro">
+
+                Un poco del camino que recorrí hasta empezar a formarme profesionalmente en programación.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <article
+                class="timeline-item reveal-item">
+
+
+                <div class="timeline-marker">
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="timeline-date">
+                        2022
+                    </span>
+
+
+                    <h3>
+                        El comienzo
+                    </h3>
+
+
+                    <p>
+
+                        Comencé a acercarme al mundo de la programación a través de
+                        <strong>
+                            Argentina Programa 4.0
+                        </strong>.
+                        Fue uno de mis primeros contactos con el desarrollo de software.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+            <article
+                class="timeline-item active reveal-item">
+
+
+                <div class="timeline-marker">
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="timeline-date">
+                        ACTUAL
+                    </span>
+
+
+                    <h3>
+                        Formación
+                    </h3>
+
+
+                    <p>
+
+                        Actualmente continúo mi formación en la
+                        <strong>
+                            Tecnicatura Superior en Desarrollo de Software
+                        </strong>,
+                        profundizando mis conocimientos en programación,
+                        bases de datos y desarrollo web.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+            <article
+                class="timeline-item reveal-item">
+
+
+                <div class="timeline-marker">
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="timeline-date">
+                        PRÓXIMO
+                    </span>
+
+
+                    <h3>
+                        Lo que sigue
+                    </h3>
+
+
+                    <p>
+
+                        Seguir aprendiendo, desarrollar proyectos propios y transformar
+                        todo lo aprendido en experiencias reales.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     HABILIDADES
+     ===================================================== -->
+
+<section
+    id="habilidades"
+    class="section">
+
+
+    <div class="section-heading reveal-item">
+
+
+        <p class="section-number">
+            02 / HABILIDADES
+        </p>
+
+
+        <h2>
+            Lo que estoy aprendiendo.
+        </h2>
+
+
+        <p>
+
+            Tecnologías y conocimientos que forman parte de mi formación en Desarrollo de Software.
+
+        </p>
+
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <article class="skill-card reveal-item">
+
+
+            <div class="skill-icon">
+                &lt;/&gt;
+            </div>
+
+
+            <span class="card-number">
+                01
+            </span>
+
+
+            <h3>
+                Frontend
+            </h3>
+
+
+            <p>
+
+                Desarrollo de interfaces web utilizando HTML, CSS y JavaScript.
+
+            </p>
+
+
+            <div class="skill-tags">
+
+                <span>
+                    HTML5
+                </span>
+
+                <span>
+                    CSS3
+                </span>
+
+                <span>
+                    JavaScript
+                </span>
+
+            </div>
+
+
+        </article>
+
+
+        <article class="skill-card reveal-item">
+
+
+            <div class="skill-icon">
+                JAVA
+            </div>
+
+
+            <span class="card-number">
+                02
+            </span>
+
+
+            <h3>
+                Java
+            </h3>
+
+
+            <p>
+
+                Programación orientada a objetos, lógica, algoritmos y resolución de problemas.
+
+            </p>
+
+
+            <div class="skill-tags">
+
+                <span>
+                    Java
+                </span>
+
+                <span>
+                    POO
+                </span>
+
+                <span>
+                    Algoritmos
+                </span>
+
+            </div>
+
+
+        </article>
+
+
+        <article class="skill-card reveal-item">
+
+
+            <div class="skill-icon">
+                SQL
+            </div>
+
+
+            <span class="card-number">
+                03
+            </span>
+
+
+            <h3>
+                Bases de datos
+            </h3>
+
+
+            <p>
+
+                Trabajo con bases de datos relacionales y consultas SQL.
+
+            </p>
+
+
+            <div class="skill-tags">
+
+                <span>
+                    SQL
+                </span>
+
+                <span>
+                    MySQL
+                </span>
+
+                <span>
+                    Git
+                </span>
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     PERSONAL
+     ===================================================== -->
+
+<section
+    id="personal"
+    class="section">
+
+
+    <div class="section-heading reveal-item">
+
+
+        <p class="section-number">
+            03 / PERSONAL
+        </p>
+
+
+        <h2>
+            Más allá del código.
+        </h2>
+
+
+        <p>
+
+            Mis intereses también son una forma de seguir aprendiendo y desarrollando nuevas ideas.
+
+        </p>
+
+
+    </div>
+
+
+    <div class="personal-container">
+
+
+        <div class="personal-text reveal-item">
+
+
+            <p>
+
+                En mi tiempo libre disfruto de los videojuegos y el cine,
+                pero también intento llevar ese interés un paso más allá.
+                Actualmente estoy aprendiendo desarrollo de videojuegos y
+                experimentando con distintas herramientas para crear mi propio juego,
+                combinando programación, creatividad y diseño.
+
+            </p>
+
+
+            <div class="interest-grid">
+
+
+                <div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        Crear videojuegos
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        Aprender haciendo
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        Cine & creatividad
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="personal-img reveal-item">
+
+
+            <img
+                src="https://i.postimg.cc/QxZn3LkF/mario-dance-gangnam-style.gif"
+                alt="Mario bailando"
+                loading="lazy">
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     CONTACTO
+     ===================================================== -->
+
+<section
+    id="contacto"
+    class="section contact">
+
+
+    <div class="section-heading reveal-item">
+
+
+        <p class="section-number">
+            04 / CONTACTO
+        </p>
+
+
+        <h2>
+            Hablemos.
+        </h2>
+
+
+        <p>
+
+            Podés dejarme un mensaje o visitar mi perfil de GitHub.
+
+        </p>
+
+
+    </div>
+
+
+    <form
+        action="#"
+        method="post"
+        class="reveal-item"
+        aria-label="Formulario de contacto">
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="mensaje">
+                Mensaje
+            </label>
+
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="6"
+                placeholder="Escribí tu mensaje..."
+                required></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+
+            Enviar mensaje
+            <span>→</span>
+
         </button>
 
-        <nav id="main-nav" aria-label="Navegación principal">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#personal">Personal</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- HERO -->
-        <section id="inicio" class="hero">
-            <div class="hero-main">
-                <div class="hero-content reveal-item">
-                    <p class="eyebrow">01 / SOFTWARE DEVELOPER</p>
-                    <h1>
-                        Hola, soy
-                        <strong>Brian David<br>Lavandera</strong>
-                        <span class="cursor">_</span>
-                    </h1>
-                    <p class="hero-description">
-                        Soy estudiante de Desarrollo de Software y me interesa crear soluciones mediante código, lógica y creatividad.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contacto" class="btn btn-primary">Hablemos <span>→</span></a>
-                        <a href="https://github.com/brianlavandera3" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-                    </div>
-                    <div class="status-line">
-                        <span class="status-dot"></span>
-                        <span>ESTUDIANDO DESARROLLO DE SOFTWARE</span>
-                    </div>
-                </div>
+    </form>
 
-                <div class="hero-visual reveal-item">
-                    <div class="profile-frame">
-                        <span class="frame-label top-left">PROFILE</span>
-                        <span class="frame-label bottom-right">ONLINE</span>
-                        <img src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b" alt="Foto de perfil de Brian David Lavandera">
-                    </div>
-                </div>
-            </div>
 
-            <!-- HISTORIA -->
-            <div class="story">
-                <div class="story-header reveal-item">
-                    <div>
-                        <p class="story-label">MY STORY</p>
-                        <h2>Cómo llegué<br>hasta acá.</h2>
-                    </div>
-                    <p class="story-intro">
-                        Un poco del camino que recorrí hasta empezar a formarme profesionalmente en programación.
-                    </p>
-                </div>
+    <a
+        class="github-contact reveal-item"
+        href="https://github.com/brianlavandera3"
+        target="_blank"
+        rel="noopener noreferrer">
 
-                <div class="timeline">
-                    <article class="timeline-item reveal-item">
-                        <div class="timeline-marker"><span>01</span></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2022</span>
-                            <h3>El comienzo</h3>
-                            <p>Comencé a acercarme al mundo de la programación a través de <strong>Argentina Programa 4.0</strong>. Fue uno de mis primeros contactos con el desarrollo de software.</p>
-                        </div>
-                    </article>
+        <span>
+            GITHUB
+        </span>
 
-                    <article class="timeline-item active reveal-item">
-                        <div class="timeline-marker"><span>02</span></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">ACTUAL</span>
-                            <h3>Formación</h3>
-                            <p>Actualmente continúo mi formación en la <strong>Tecnicatura Superior en Desarrollo de Software</strong>, profundizando mis conocimientos en programación, bases de datos y desarrollo web.</p>
-                        </div>
-                    </article>
+        @brianlavandera3 ↗
 
-                    <article class="timeline-item reveal-item">
-                        <div class="timeline-marker"><span>03</span></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">PRÓXIMO</span>
-                            <h3>Lo que sigue</h3>
-                            <p>Seguir aprendiendo, desarrollar proyectos propios y transformar todo lo aprendido en experiencias reales.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+    </a>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades" class="section">
-            <div class="section-heading reveal-item">
-                <p class="section-number">02 / HABILIDADES</p>
-                <h2>Lo que estoy aprendiendo.</h2>
-                <p>Tecnologías y conocimientos que forman parte de mi formación en Desarrollo de Software.</p>
-            </div>
 
-            <div class="skills-grid">
-                <article class="skill-card reveal-item">
-                    <div class="skill-icon">&lt;/&gt;</div>
-                    <span class="card-number">01</span>
-                    <h3>Frontend</h3>
-                    <p>Desarrollo de interfaces web utilizando HTML, CSS y JavaScript.</p>
-                    <div class="skill-tags">
-                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-                    </div>
-                </article>
+</section>
 
-                <article class="skill-card reveal-item">
-                    <div class="skill-icon">JAVA</div>
-                    <span class="card-number">02</span>
-                    <h3>Java</h3>
-                    <p>Programación orientada a objetos, lógica, algoritmos y resolución de problemas.</p>
-                    <div class="skill-tags">
-                        <span>Java</span><span>POO</span><span>Algoritmos</span>
-                    </div>
-                </article>
 
-                <article class="skill-card reveal-item">
-                    <div class="skill-icon">SQL</div>
-                    <span class="card-number">03</span>
-                    <h3>Bases de datos</h3>
-                    <p>Trabajo con bases de datos relacionales y consultas SQL.</p>
-                    <div class="skill-tags">
-                        <span>SQL</span><span>MySQL</span><span>Git</span>
-                    </div>
-                </article>
-            </div>
-        </section>
+</main>
 
-        <!-- PERSONAL -->
-        <section id="personal" class="section">
-            <div class="section-heading reveal-item">
-                <p class="section-number">03 / PERSONAL</p>
-                <h2>Más allá del código.</h2>
-                <p>Mis intereses también son una forma de seguir aprendiendo y desarrollando nuevas ideas.</p>
-            </div>
 
-            <div class="personal-container">
-                <div class="personal-text reveal-item">
-                    <p>
-                        En mi tiempo libre disfruto de los videojuegos y el cine, pero también intento llevar ese interés un paso más allá.
-                        Actualmente estoy aprendiendo desarrollo de videojuegos y experimentando con distintas herramientas para crear mi propio juego, combinando programación, creatividad y diseño.
-                    </p>
-                    <div class="interest-grid">
-                        <div><span>01</span><strong>Crear videojuegos</strong></div>
-                        <div><span>02</span><strong>Aprender haciendo</strong></div>
-                        <div><span>03</span><strong>Cine & creatividad</strong></div>
-                    </div>
-                </div>
-                <div class="personal-img reveal-item">
-                    <img src="https://i.postimg.cc/QxZn3LkF/mario-dance-gangnam-style.gif" alt="Mario bailando" loading="lazy">
-                </div>
-            </div>
-        </section>
+<footer class="site-footer">
 
-        <!-- CONTACTO -->
-        <section id="contacto" class="section contact">
-            <div class="section-heading reveal-item">
-                <p class="section-number">04 / CONTACTO</p>
-                <h2>Hablemos.</h2>
-                <p>Podés dejarme un mensaje o visitar mi perfil de GitHub.</p>
-            </div>
 
-            <form action="#" method="post" class="reveal-item" aria-label="Formulario de contacto">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar mensaje <span>→</span></button>
-            </form>
+    <p>
+        &gt; BRIAN.D.L
+    </p>
 
-            <a class="github-contact reveal-item" href="https://github.com/brianlavandera3" target="_blank" rel="noopener noreferrer">
-                <span>GITHUB</span> @brianlavandera3 ↗
-            </a>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <p>&gt; BRIAN.L</p>
-        <span>Portfolio personal · Desarrollo de Software</span>
-    </footer>
+    <span>
+        Portfolio personal · Desarrollo de Software
+    </span>
 
-    <script>
-        // Menú mobile
-        const menuToggle = document.getElementById("menu-toggle");
-        const mainNav = document.getElementById("main-nav");
 
-        function closeMenu() {
-            mainNav.classList.remove("activo");
-            menuToggle.classList.remove("activo");
-            menuToggle.setAttribute("aria-expanded", "false");
-            menuToggle.setAttribute("aria-label", "Abrir menú");
+</footer>
+
+
+<script>
+
+
+/* =====================================================
+   MENÚ MOBILE
+   ===================================================== */
+
+const menuToggle =
+    document.getElementById(
+        "menu-toggle"
+    );
+
+
+const mainNav =
+    document.getElementById(
+        "main-nav"
+    );
+
+
+function closeMenu() {
+
+    mainNav.classList.remove(
+        "activo"
+    );
+
+    menuToggle.classList.remove(
+        "activo"
+    );
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+    menuToggle.setAttribute(
+        "aria-label",
+        "Abrir menú"
+    );
+
+}
+
+
+menuToggle.addEventListener(
+    "click",
+    () => {
+
+        const isOpen =
+            mainNav.classList.toggle(
+                "activo"
+            );
+
+
+        menuToggle.classList.toggle(
+            "activo",
+            isOpen
+        );
+
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Cerrar menú"
+                : "Abrir menú"
+        );
+
+    }
+);
+
+
+/* =====================================================
+   DESPLAZAMIENTO SUAVE
+   ===================================================== */
+
+document
+    .querySelectorAll(
+        '#main-nav a, .hero-actions a'
+    )
+    .forEach(
+        link => {
+
+            link.addEventListener(
+                'click',
+                function(e) {
+
+                    const targetId =
+                        this.getAttribute(
+                            'href'
+                        );
+
+
+                    if (
+                        targetId &&
+                        targetId.startsWith('#')
+                    ) {
+
+                        e.preventDefault();
+
+                        closeMenu();
+
+
+                        const targetElement =
+                            document.querySelector(
+                                targetId
+                            );
+
+
+                        if (targetElement) {
+
+                            const headerHeight =
+                                80;
+
+
+                            const targetPosition =
+                                targetElement
+                                    .getBoundingClientRect()
+                                    .top +
+                                window.pageYOffset -
+                                headerHeight;
+
+
+                            const startPosition =
+                                window.pageYOffset;
+
+
+                            const distance =
+                                targetPosition -
+                                startPosition;
+
+
+                            const duration =
+                                600;
+
+
+                            let start =
+                                null;
+
+
+                            function animation(
+                                currentTime
+                            ) {
+
+                                if (
+                                    start === null
+                                ) {
+
+                                    start =
+                                        currentTime;
+
+                                }
+
+
+                                const timeElapsed =
+                                    currentTime -
+                                    start;
+
+
+                                const run =
+                                    ease(
+                                        timeElapsed,
+                                        startPosition,
+                                        distance,
+                                        duration
+                                    );
+
+
+                                window.scrollTo(
+                                    0,
+                                    run
+                                );
+
+
+                                if (
+                                    timeElapsed <
+                                    duration
+                                ) {
+
+                                    requestAnimationFrame(
+                                        animation
+                                    );
+
+                                }
+
+                            }
+
+
+                            function ease(
+                                t,
+                                b,
+                                c,
+                                d
+                            ) {
+
+                                t /=
+                                    d / 2;
+
+
+                                if (
+                                    t < 1
+                                ) {
+
+                                    return (
+                                        c / 2 *
+                                        t *
+                                        t +
+                                        b
+                                    );
+
+                                }
+
+
+                                t--;
+
+
+                                return (
+                                    -c / 2 *
+                                    (
+                                        t *
+                                        (t - 2) -
+                                        1
+                                    ) +
+                                    b
+                                );
+
+                            }
+
+
+                            requestAnimationFrame(
+                                animation
+                            );
+
+                        }
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+
+/* =====================================================
+   ESC PARA CERRAR MENÚ
+   ===================================================== */
+
+document.addEventListener(
+    "keydown",
+    e => {
+
+        if (
+            e.key === "Escape"
+        ) {
+
+            closeMenu();
+
         }
 
-        menuToggle.addEventListener("click", () => {
-            const isOpen = mainNav.classList.toggle("activo");
-            menuToggle.classList.toggle("activo", isOpen);
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
-            menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-        });
+    }
+);
 
-        // Desplazamiento suave personalizado y garantizado (Animación fluida por pasos)
-        document.querySelectorAll('#main-nav a, .hero-actions a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId && targetId.startsWith('#')) {
-                    e.preventDefault();
-                    closeMenu();
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const headerHeight = 80;
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-                        const startPosition = window.pageYOffset;
-                        const distance = targetPosition - startPosition;
-                        const duration = 600; // Duración en milisegundos (ajustalo si querés más lento o rápido)
-                        let start = null;
 
-                        function animation(currentTime) {
-                            if (start === null) start = currentTime;
-                            const timeElapsed = currentTime - start;
-                            const run = ease(timeElapsed, startPosition, distance, duration);
-                            window.scrollTo(0, run);
-                            if (timeElapsed < duration) {
-                                requestAnimationFrame(animation);
-                            }
-                        }
+/* =====================================================
+   ANIMACIÓN AL HACER SCROLL
+   ===================================================== */
 
-                        // Función de aceleración suave (easeInOutQuad)
-                        function ease(t, b, c, d) {
-                            t /= d / 2;
-                            if (t < 1) return c / 2 * t * t + b;
-                            t--;
-                            -c / 2 * (t * (t - 2) - 1) + b;
-                            return -c / 2 * (t * (t - 2) - 1) + b;
-                        }
+const observerOptions = {
 
-                        requestAnimationFrame(animation);
+    root:
+        null,
+
+    rootMargin:
+        '0px',
+
+    threshold:
+        0.15
+
+};
+
+
+const observer =
+    new IntersectionObserver(
+        (
+            entries,
+            observer
+        ) => {
+
+            entries.forEach(
+                entry => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        entry.target
+                            .classList
+                            .add(
+                                'visible'
+                            );
+
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
                     }
+
                 }
-            });
-        });
+            );
 
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") closeMenu();
-        });
+        },
+        observerOptions
+    );
 
-        // Animación al hacer scroll (Intersection Observer)
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
+document
+    .querySelectorAll(
+        '.reveal-item'
+    )
+    .forEach(
+        item => {
+
+            observer.observe(
+                item
+            );
+
+        }
+    );
+
+
+/* =====================================================
+   BARRA DE PROGRESO
+   ===================================================== */
+
+window.addEventListener(
+    'scroll',
+    () => {
+
+        const winScroll =
+            document.documentElement
+                .scrollTop;
+
+
+        const height =
+            document.documentElement
+                .scrollHeight -
+            document.documentElement
+                .clientHeight;
+
+
+        const scrolled =
+            height > 0
+                ? (
+                    winScroll /
+                    height
+                ) * 100
+                : 0;
+
+
+        document
+            .getElementById(
+                'scroll-progress'
+            )
+            .style.width =
+            scrolled + '%';
+
+    }
+);
+
+
+/* =====================================================
+   SPOTLIGHT DE LAS TARJETAS
+   ===================================================== */
+
+document
+    .querySelectorAll(
+        '.skill-card'
+    )
+    .forEach(
+        card => {
+
+            card.addEventListener(
+                'mousemove',
+                e => {
+
+                    const rect =
+                        card.getBoundingClientRect();
+
+
+                    const x =
+                        e.clientX -
+                        rect.left;
+
+
+                    const y =
+                        e.clientY -
+                        rect.top;
+
+
+                    card.style.setProperty(
+                        '--mouse-x',
+                        `${x}px`
+                    );
+
+
+                    card.style.setProperty(
+                        '--mouse-y',
+                        `${y}px`
+                    );
+
                 }
-            });
-        }, observerOptions);
+            );
 
-        document.querySelectorAll('.reveal-item').forEach(item => {
-            observer.observe(item);
-        });
+        }
+    );
 
-        // Barra de progreso de scroll
-        window.addEventListener('scroll', () => {
-            const winScroll = document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('scroll-progress').style.width = scrolled + '%';
-        });
 
-        // Efecto de luz seguidora (spotlight) en las tarjetas de habilidades
-        document.querySelectorAll('.skill-card').forEach(card => {
-            card.addEventListener('mousemove', e => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            });
+
+
+/* =====================================================
+   MATRIX SUTIL - SIMBOLOS DE JAVA
+   ===================================================== */
+const matrixCanvas = document.getElementById("matrix-canvas");
+const matrixCtx = matrixCanvas.getContext("2d");
+
+const javaSymbols = [
+    "0", "1", "{", "}", "(", ")", "[", "]",
+    ";", "=", "+", "-", "*", "/", "&&", "||",
+    "==", "++", "--", "int", "if", "else", "for",
+    "new", "void", "class", "public", "static",
+    "String", "System", "out", "null", "true", "false"
+];
+
+let matrixDrops = [];
+let matrixWidth = 0;
+let matrixHeight = 0;
+
+function resizeMatrix() {
+    matrixWidth = window.innerWidth;
+    matrixHeight = window.innerHeight;
+
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    matrixCanvas.width = matrixWidth * dpr;
+    matrixCanvas.height = matrixHeight * dpr;
+    matrixCanvas.style.width = matrixWidth + "px";
+    matrixCanvas.style.height = matrixHeight + "px";
+
+    matrixCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const fontSize = window.innerWidth <= 600 ? 13 : 15;
+    const spacing = window.innerWidth <= 600 ? 70 : 90;
+    const columns = Math.ceil(matrixWidth / spacing);
+
+    matrixDrops = [];
+
+    for (let i = 0; i < columns; i++) {
+        matrixDrops.push({
+            x: i * spacing + Math.random() * 25,
+            y: Math.random() * -matrixHeight,
+            speed: 0.18 + Math.random() * 0.35,
+            size: fontSize,
+            symbol: javaSymbols[Math.floor(Math.random() * javaSymbols.length)],
+            opacity: 0.10 + Math.random() * 0.16
         });
-    </script>
+    }
+}
+
+function drawMatrix() {
+    matrixCtx.clearRect(0, 0, matrixWidth, matrixHeight);
+
+    for (const drop of matrixDrops) {
+        matrixCtx.font = `${drop.size}px "JetBrains Mono", monospace`;
+        matrixCtx.fillStyle = `rgba(0, 255, 65, ${drop.opacity})`;
+        matrixCtx.fillText(drop.symbol, drop.x, drop.y);
+
+        drop.y += drop.speed;
+
+        if (drop.y > matrixHeight + 40) {
+            drop.y = -20 - Math.random() * 180;
+            drop.symbol = javaSymbols[Math.floor(Math.random() * javaSymbols.length)];
+        }
+
+        if (Math.random() < 0.018) {
+            drop.symbol = javaSymbols[Math.floor(Math.random() * javaSymbols.length)];
+        }
+    }
+
+    requestAnimationFrame(drawMatrix);
+}
+
+resizeMatrix();
+window.addEventListener("resize", resizeMatrix);
+drawMatrix();
+
+
+/* =====================================================
+   TYPING COMPLETO
+   ===================================================== */
+
+const typingName =
+    document.getElementById(
+        "typing-name"
+    );
+
+
+const fullText =
+    "Hola, soy Brian David \n Lavandera";
+
+
+let typingIndex =
+    0;
+
+
+function typeName() {
+
+    if (
+        typingIndex <
+        fullText.length
+    ) {
+
+        const character =
+            fullText.charAt(
+                typingIndex
+            );
+
+
+        if (
+            character === "\n"
+        ) {
+
+            typingName.innerHTML +=
+                "<br>";
+
+        } else {
+
+            typingName.textContent +=
+                character;
+
+        }
+
+
+        typingIndex++;
+
+
+        setTimeout(
+            typeName,
+            75
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   COMIENZO DEL TYPING
+   ===================================================== */
+
+window.addEventListener(
+    "load",
+    () => {
+
+        setTimeout(
+            typeName,
+            400
+        );
+
+    }
+);
+
+
+</script>
+
+
 </body>
+
 </html>
