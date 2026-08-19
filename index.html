@@ -1,1050 +1,320 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Portfolio personal de Brian David Lavandera, estudiante de Desarrollo de Software."
-    >
-
-    <meta
-        name="author"
-        content="Brian David Lavandera"
-    >
-
+    <meta name="description" content="Portfolio personal de Brian David Lavandera, estudiante de Desarrollo de Software.">
+    <meta name="author" content="Brian David Lavandera">
     <title>Brian David Lavandera | Portfolio</title>
 
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-
-    <!-- =====================================================
-         HEADER
-         ===================================================== -->
-
     <header class="site-header">
+        <div class="scroll-progress" id="scroll-progress"></div>
+        <a href="#inicio" class="logo"><span>&gt;</span> BRIAN.L</a>
 
-        <a
-            href="#inicio"
-            class="logo"
-        >
-            <span>&gt;</span> BRIAN.L
-        </a>
-
-
-        <button
-            class="menu-toggle"
-            id="menu-toggle"
-            type="button"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="main-nav"
-        >
-
-            <span></span>
-            <span></span>
-            <span></span>
-
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
         </button>
 
-
-        <nav
-            id="main-nav"
-            aria-label="Navegación principal"
-        >
-
+        <nav id="main-nav" aria-label="Navegación principal">
             <ul>
-
-                <li>
-                    <a href="#inicio">
-                        Inicio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#habilidades">
-                        Habilidades
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#personal">
-                        Personal
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contacto">
-                        Contacto
-                    </a>
-                </li>
-
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-
-
     <main>
-
-
-        <!-- =====================================================
-             INICIO
-             Presentación + historia + recorrido
-             ===================================================== -->
-
-        <section
-            id="inicio"
-            class="hero"
-            aria-labelledby="hero-title"
-        >
-
-
-            <!-- PRESENTACIÓN -->
-
+        <!-- HERO -->
+        <section id="inicio" class="hero">
             <div class="hero-main">
-
-
-                <div class="hero-content">
-
-                    <p class="eyebrow">
-                        01 / SOFTWARE DEVELOPER
-                    </p>
-
-
-                    <h1 id="hero-title">
-
+                <div class="hero-content reveal-item">
+                    <p class="eyebrow">01 / SOFTWARE DEVELOPER</p>
+                    <h1>
                         Hola, soy
-
-                        <strong>
-                            Brian David
-                            <br>
-                            Lavandera
-                        </strong>
-
-                        <span class="cursor">
-                            _
-                        </span>
-
+                        <strong>Brian David<br>Lavandera</strong>
+                        <span class="cursor">_</span>
                     </h1>
-
-
                     <p class="hero-description">
-
-                        Soy estudiante de Desarrollo de Software
-                        y me interesa crear soluciones mediante
-                        código, lógica y creatividad.
-
+                        Soy estudiante de Desarrollo de Software y me interesa crear soluciones mediante código, lógica y creatividad.
                     </p>
-
-
                     <div class="hero-actions">
-
-
-                        <a
-                            href="#contacto"
-                            class="btn btn-primary"
-                        >
-
-                            Hablemos
-
-                            <span>
-                                →
-                            </span>
-
-                        </a>
-
-
-                        <a
-                            href="https://github.com/brianlavandera3"
-                            class="btn btn-secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            GitHub
-
-                            <span>
-                                ↗
-                            </span>
-
-                        </a>
-
-
+                        <a href="#contacto" class="btn btn-primary">Hablemos <span>→</span></a>
+                        <a href="https://github.com/brianlavandera3" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
                     </div>
-
-
                     <div class="status-line">
-
                         <span class="status-dot"></span>
-
-                        <span>
-                            ESTUDIANDO DESARROLLO DE SOFTWARE
-                        </span>
-
+                        <span>ESTUDIANDO DESARROLLO DE SOFTWARE</span>
                     </div>
-
-
                 </div>
 
-
-
-                <!-- FOTO -->
-
-                <div class="hero-visual">
-
+                <div class="hero-visual reveal-item">
                     <div class="profile-frame">
-
-
-                        <span class="frame-label top-left">
-                            PROFILE
-                        </span>
-
-
-                        <span class="frame-label bottom-right">
-                            ONLINE
-                        </span>
-
-
-                        <img
-                            src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b"
-                            alt="Foto de perfil de Brian David Lavandera"
-                        >
-
-
+                        <span class="frame-label top-left">PROFILE</span>
+                        <span class="frame-label bottom-right">ONLINE</span>
+                        <img src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b" alt="Foto de perfil de Brian David Lavandera">
                     </div>
-
                 </div>
-
-
             </div>
 
-
-
-            <!-- =================================================
-                 HISTORIA INTEGRADA EN INICIO
-                 ================================================= -->
-
+            <!-- HISTORIA -->
             <div class="story">
-
-
-                <div class="story-header">
-
-
+                <div class="story-header reveal-item">
                     <div>
-
-                        <p class="story-label">
-                            MY STORY
-                        </p>
-
-
-                        <h2>
-                            Cómo llegué
-                            <br>
-                            hasta acá.
-                        </h2>
-
+                        <p class="story-label">MY STORY</p>
+                        <h2>Cómo llegué<br>hasta acá.</h2>
                     </div>
-
-
                     <p class="story-intro">
-
-                        Un poco del camino que recorrí hasta
-                        empezar a formarme profesionalmente
-                        en programación.
-
+                        Un poco del camino que recorrí hasta empezar a formarme profesionalmente en programación.
                     </p>
-
-
                 </div>
-
-
-
-                <!-- RECORRIDO -->
 
                 <div class="timeline">
-
-
-                    <!-- 2022 -->
-
-                    <article class="timeline-item">
-
-
-                        <div class="timeline-marker">
-
-                            <span>
-                                01
-                            </span>
-
-                        </div>
-
-
+                    <article class="timeline-item reveal-item">
+                        <div class="timeline-marker"><span>01</span></div>
                         <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                2022
-                            </span>
-
-
-                            <h3>
-                                El comienzo
-                            </h3>
-
-
-                            <p>
-
-                                Comencé a acercarme al mundo de
-                                la programación a través de
-                                <strong>
-                                    Argentina Programa 4.0
-                                </strong>.
-
-                                Fue uno de mis primeros contactos
-                                con el desarrollo de software.
-
-                            </p>
-
+                            <span class="timeline-date">2022</span>
+                            <h3>El comienzo</h3>
+                            <p>Comencé a acercarme al mundo de la programación a través de <strong>Argentina Programa 4.0</strong>. Fue uno de mis primeros contactos con el desarrollo de software.</p>
                         </div>
-
-
                     </article>
 
-
-
-                    <!-- ACTUAL -->
-
-                    <article class="timeline-item active">
-
-
-                        <div class="timeline-marker">
-
-                            <span>
-                                02
-                            </span>
-
-                        </div>
-
-
+                    <article class="timeline-item active reveal-item">
+                        <div class="timeline-marker"><span>02</span></div>
                         <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                ACTUAL
-                            </span>
-
-
-                            <h3>
-                                Formación
-                            </h3>
-
-
-                            <p>
-
-                                Actualmente continúo mi formación
-                                en la
-                                <strong>
-                                    Tecnicatura Superior en
-                                    Desarrollo de Software
-                                </strong>,
-
-                                profundizando mis conocimientos
-                                en programación, bases de datos
-                                y desarrollo web.
-
-                            </p>
-
+                            <span class="timeline-date">ACTUAL</span>
+                            <h3>Formación</h3>
+                            <p>Actualmente continúo mi formación en la <strong>Tecnicatura Superior en Desarrollo de Software</strong>, profundizando mis conocimientos en programación, bases de datos y desarrollo web.</p>
                         </div>
-
-
                     </article>
 
-
-
-                    <!-- FUTURO -->
-
-                    <article class="timeline-item">
-
-
-                        <div class="timeline-marker">
-
-                            <span>
-                                03
-                            </span>
-
-                        </div>
-
-
+                    <article class="timeline-item reveal-item">
+                        <div class="timeline-marker"><span>03</span></div>
                         <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                PRÓXIMO
-                            </span>
-
-
-                            <h3>
-                                Lo que sigue
-                            </h3>
-
-
-                            <p>
-
-                                Seguir aprendiendo, desarrollar
-                                proyectos propios y transformar
-                                todo lo aprendido en experiencias
-                                reales.
-
-                            </p>
-
+                            <span class="timeline-date">PRÓXIMO</span>
+                            <h3>Lo que sigue</h3>
+                            <p>Seguir aprendiendo, desarrollar proyectos propios y transformar todo lo aprendido en experiencias reales.</p>
                         </div>
-
-
                     </article>
-
-
                 </div>
-
-
             </div>
-
-
         </section>
 
-
-
-        <!-- =====================================================
-             HABILIDADES
-             ===================================================== -->
-
-        <section
-            id="habilidades"
-            class="section"
-            aria-labelledby="skills-title"
-        >
-
-
-            <div class="section-heading">
-
-                <p class="section-number">
-                    02 / HABILIDADES
-                </p>
-
-
-                <h2 id="skills-title">
-                    Lo que estoy aprendiendo.
-                </h2>
-
-
-                <p>
-
-                    Tecnologías y conocimientos que forman parte
-                    de mi formación en Desarrollo de Software.
-
-                </p>
-
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="section">
+            <div class="section-heading reveal-item">
+                <p class="section-number">02 / HABILIDADES</p>
+                <h2>Lo que estoy aprendiendo.</h2>
+                <p>Tecnologías y conocimientos que forman parte de mi formación en Desarrollo de Software.</p>
             </div>
-
-
 
             <div class="skills-grid">
-
-
-                <!-- FRONTEND -->
-
-                <article class="skill-card">
-
-
-                    <div class="skill-icon">
-                        &lt;/&gt;
-                    </div>
-
-
-                    <span class="card-number">
-                        01
-                    </span>
-
-
-                    <h3>
-                        Frontend
-                    </h3>
-
-
-                    <p>
-
-                        Desarrollo de interfaces web utilizando
-                        HTML, CSS y JavaScript.
-
-                    </p>
-
-
+                <article class="skill-card reveal-item">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <span class="card-number">01</span>
+                    <h3>Frontend</h3>
+                    <p>Desarrollo de interfaces web utilizando HTML, CSS y JavaScript.</p>
                     <div class="skill-tags">
-
-                        <span>
-                            HTML5
-                        </span>
-
-                        <span>
-                            CSS3
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                     </div>
-
-
                 </article>
 
-
-
-                <!-- JAVA -->
-
-                <article class="skill-card">
-
-
-                    <div class="skill-icon">
-                        JAVA
-                    </div>
-
-
-                    <span class="card-number">
-                        02
-                    </span>
-
-
-                    <h3>
-                        Java
-                    </h3>
-
-
-                    <p>
-
-                        Programación orientada a objetos,
-                        lógica, algoritmos y resolución
-                        de problemas.
-
-                    </p>
-
-
+                <article class="skill-card reveal-item">
+                    <div class="skill-icon">JAVA</div>
+                    <span class="card-number">02</span>
+                    <h3>Java</h3>
+                    <p>Programación orientada a objetos, lógica, algoritmos y resolución de problemas.</p>
                     <div class="skill-tags">
-
-                        <span>
-                            Java
-                        </span>
-
-                        <span>
-                            POO
-                        </span>
-
-                        <span>
-                            Algoritmos
-                        </span>
-
+                        <span>Java</span><span>POO</span><span>Algoritmos</span>
                     </div>
-
-
                 </article>
 
-
-
-                <!-- BASES DE DATOS -->
-
-                <article class="skill-card">
-
-
-                    <div class="skill-icon">
-                        SQL
-                    </div>
-
-
-                    <span class="card-number">
-                        03
-                    </span>
-
-
-                    <h3>
-                        Bases de datos
-                    </h3>
-
-
-                    <p>
-
-                        Trabajo con bases de datos relacionales
-                        y consultas SQL.
-
-                    </p>
-
-
+                <article class="skill-card reveal-item">
+                    <div class="skill-icon">SQL</div>
+                    <span class="card-number">03</span>
+                    <h3>Bases de datos</h3>
+                    <p>Trabajo con bases de datos relacionales y consultas SQL.</p>
                     <div class="skill-tags">
-
-                        <span>
-                            SQL
-                        </span>
-
-                        <span>
-                            MySQL
-                        </span>
-
-                        <span>
-                            Git
-                        </span>
-
+                        <span>SQL</span><span>MySQL</span><span>Git</span>
                     </div>
-
-
                 </article>
-
-
             </div>
-
-
         </section>
 
-
-
-        <!-- =====================================================
-             PERSONAL
-             ===================================================== -->
-
-        <section
-            id="personal"
-            class="section"
-            aria-labelledby="personal-title"
-        >
-
-
-            <div class="section-heading">
-
-                <p class="section-number">
-                    03 / PERSONAL
-                </p>
-
-
-                <h2 id="personal-title">
-                    Más allá del código.
-                </h2>
-
-
-                <p>
-
-                    Mis intereses también son una forma de seguir
-                    aprendiendo y desarrollando nuevas ideas.
-
-                </p>
-
+        <!-- PERSONAL -->
+        <section id="personal" class="section">
+            <div class="section-heading reveal-item">
+                <p class="section-number">03 / PERSONAL</p>
+                <h2>Más allá del código.</h2>
+                <p>Mis intereses también son una forma de seguir aprendiendo y desarrollando nuevas ideas.</p>
             </div>
-
-
 
             <div class="personal-container">
-
-
-                <!-- TEXTO -->
-
-                <div class="personal-text">
-
-
+                <div class="personal-text reveal-item">
                     <p>
-
-                        En mi tiempo libre disfruto de los
-                        videojuegos y el cine, pero también
-                        intento llevar ese interés un paso más
-                        allá.
-
-                        Actualmente estoy aprendiendo desarrollo
-                        de videojuegos y experimentando con
-                        distintas herramientas para crear mi
-                        propio juego, combinando programación,
-                        creatividad y diseño.
-
+                        En mi tiempo libre disfruto de los videojuegos y el cine, pero también intento llevar ese interés un paso más allá.
+                        Actualmente estoy aprendiendo desarrollo de videojuegos y experimentando con distintas herramientas para crear mi propio juego, combinando programación, creatividad y diseño.
                     </p>
-
-
-
-                    <!-- INTERESES -->
-
                     <div class="interest-grid">
-
-
-                        <div>
-
-                            <span>
-                                01
-                            </span>
-
-                            <strong>
-                                Crear videojuegos
-                            </strong>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                02
-                            </span>
-
-                            <strong>
-                                Aprender haciendo
-                            </strong>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                03
-                            </span>
-
-                            <strong>
-                                Cine & creatividad
-                            </strong>
-
-                        </div>
-
-
+                        <div><span>01</span><strong>Crear videojuegos</strong></div>
+                        <div><span>02</span><strong>Aprender haciendo</strong></div>
+                        <div><span>03</span><strong>Cine & creatividad</strong></div>
                     </div>
-
-
                 </div>
-
-
-
-                <!-- GIF -->
-
-                <div class="personal-img">
-
-
-                    <img
-                        src="https://i.postimg.cc/QxZn3LkF/mario-dance-gangnam-style.gif"
-                        alt="Mario bailando como representación del interés por los videojuegos"
-                        loading="lazy"
-                    >
-
-
+                <div class="personal-img reveal-item">
+                    <img src="https://i.postimg.cc/QxZn3LkF/mario-dance-gangnam-style.gif" alt="Mario bailando" loading="lazy">
                 </div>
-
-
             </div>
-
-
         </section>
 
-
-
-        <!-- =====================================================
-             CONTACTO
-             ===================================================== -->
-
-        <section
-            id="contacto"
-            class="section contact"
-            aria-labelledby="contact-title"
-        >
-
-
-            <div class="section-heading">
-
-                <p class="section-number">
-                    04 / CONTACTO
-                </p>
-
-
-                <h2 id="contact-title">
-                    Hablemos.
-                </h2>
-
-
-                <p>
-
-                    Podés dejarme un mensaje o visitar mi perfil
-                    de GitHub.
-
-                </p>
-
+        <!-- CONTACTO -->
+        <section id="contacto" class="section contact">
+            <div class="section-heading reveal-item">
+                <p class="section-number">04 / CONTACTO</p>
+                <h2>Hablemos.</h2>
+                <p>Podés dejarme un mensaje o visitar mi perfil de GitHub.</p>
             </div>
 
-
-
-            <form
-                action="#"
-                method="post"
-                aria-label="Formulario de contacto"
-            >
-
-
+            <form action="#" method="post" class="reveal-item" aria-label="Formulario de contacto">
                 <div class="form-grid">
-
-
                     <div class="form-group">
-
-                        <label for="nombre">
-                            Nombre
-                        </label>
-
-
-                        <input
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            placeholder="Tu nombre"
-                            autocomplete="name"
-                            required
-                        >
-
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                     </div>
-
-
-
                     <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="tu@email.com"
-                            autocomplete="email"
-                            required
-                        >
-
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
                     </div>
-
-
                 </div>
-
-
-
                 <div class="form-group">
-
-
-                    <label for="mensaje">
-                        Mensaje
-                    </label>
-
-
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="6"
-                        placeholder="Escribí tu mensaje..."
-                        required
-                    ></textarea>
-
-
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje..." required></textarea>
                 </div>
-
-
-
-                <button
-                    type="submit"
-                    class="btn btn-primary"
-                >
-
-                    Enviar mensaje
-
-                    <span>
-                        →
-                    </span>
-
-                </button>
-
-
+                <button type="submit" class="btn btn-primary">Enviar mensaje <span>→</span></button>
             </form>
 
-
-
-            <!-- GITHUB -->
-
-            <a
-                class="github-contact"
-                href="https://github.com/brianlavandera3"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <span>
-                    GITHUB
-                </span>
-
-                @brianlavandera3 ↗
-
+            <a class="github-contact reveal-item" href="https://github.com/brianlavandera3" target="_blank" rel="noopener noreferrer">
+                <span>GITHUB</span> @brianlavandera3 ↗
             </a>
-
-
         </section>
-
-
     </main>
 
-
-
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
-
     <footer class="site-footer">
-
-
-        <p>
-            &gt; BRIAN.L
-        </p>
-
-
-        <span>
-            Portfolio personal · Desarrollo de Software
-        </span>
-
-
+        <p>&gt; BRIAN.L</p>
+        <span>Portfolio personal · Desarrollo de Software</span>
     </footer>
 
-
-
-    <!-- =====================================================
-         JAVASCRIPT - MENÚ MOBILE
-         ===================================================== -->
-
     <script>
-
-
-        const menuToggle =
-            document.getElementById("menu-toggle");
-
-
-        const mainNav =
-            document.getElementById("main-nav");
-
-
+        // Menú mobile
+        const menuToggle = document.getElementById("menu-toggle");
+        const mainNav = document.getElementById("main-nav");
 
         function closeMenu() {
-
-            mainNav.classList.remove(
-                "activo"
-            );
-
-            menuToggle.classList.remove(
-                "activo"
-            );
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-            menuToggle.setAttribute(
-                "aria-label",
-                "Abrir menú"
-            );
-
+            mainNav.classList.remove("activo");
+            menuToggle.classList.remove("activo");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Abrir menú");
         }
 
+        menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("activo");
+            menuToggle.classList.toggle("activo", isOpen);
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+        });
 
-
-        menuToggle.addEventListener(
-            "click",
-            () => {
-
-
-                const isOpen =
-                    mainNav.classList.toggle(
-                        "activo"
-                    );
-
-
-                menuToggle.classList.toggle(
-                    "activo",
-                    isOpen
-                );
-
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    String(isOpen)
-                );
-
-
-                menuToggle.setAttribute(
-                    "aria-label",
-                    isOpen
-                        ? "Cerrar menú"
-                        : "Abrir menú"
-                );
-
-
-            }
-        );
-
-
-
-        document
-            .querySelectorAll("#main-nav a")
-            .forEach(link => {
-
-
-                link.addEventListener(
-                    "click",
-                    closeMenu
-                );
-
-
-            });
-
-
-
-        document.addEventListener(
-            "keydown",
-            event => {
-
-
-                if (event.key === "Escape") {
-
+        // Desplazamiento suave personalizado y garantizado (Animación fluida por pasos)
+        document.querySelectorAll('#main-nav a, .hero-actions a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId.startsWith('#')) {
+                    e.preventDefault();
                     closeMenu();
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = 80;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        const startPosition = window.pageYOffset;
+                        const distance = targetPosition - startPosition;
+                        const duration = 600; // Duración en milisegundos (ajustalo si querés más lento o rápido)
+                        let start = null;
 
+                        function animation(currentTime) {
+                            if (start === null) start = currentTime;
+                            const timeElapsed = currentTime - start;
+                            const run = ease(timeElapsed, startPosition, distance, duration);
+                            window.scrollTo(0, run);
+                            if (timeElapsed < duration) {
+                                requestAnimationFrame(animation);
+                            }
+                        }
+
+                        // Función de aceleración suave (easeInOutQuad)
+                        function ease(t, b, c, d) {
+                            t /= d / 2;
+                            if (t < 1) return c / 2 * t * t + b;
+                            t--;
+                            -c / 2 * (t * (t - 2) - 1) + b;
+                            return -c / 2 * (t * (t - 2) - 1) + b;
+                        }
+
+                        requestAnimationFrame(animation);
+                    }
                 }
+            });
+        });
 
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeMenu();
+        });
 
-            }
-        );
+        // Animación al hacer scroll (Intersection Observer)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
 
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
+        document.querySelectorAll('.reveal-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Barra de progreso de scroll
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+        });
+
+        // Efecto de luz seguidora (spotlight) en las tarjetas de habilidades
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
     </script>
-
-
 </body>
-
 </html>
