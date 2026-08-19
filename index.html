@@ -3,307 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional</title>
+    <meta name="description" content="Portfolio de Brian David Lavandera, estudiante de Desarrollo de Software.">
+    <meta name="author" content="Brian David Lavandera">
+    <title>Brian David Lavandera | Developer Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
-<!-- EFECTO MATRIX DE FONDO -->
-<canvas id="matrix-canvas"></canvas>
+    <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Volver al inicio">
+            <span>&gt;</span> BRIAN.L
+        </a>
 
-<header>
-    <div class="logo">
-        <h1>Brian David Lavandera</h1>
-    </div>
+        <button class="menu-toggle" id="menu-toggle" type="button"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <button class="menu-toggle"
-            id="menu-toggle"
-            aria-label="Abrir menú"
-            aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <nav id="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#recorrido">Recorrido</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#sobre-mi">Inicio</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#personal">Intereses</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <main id="inicio">
 
-<main>
-    <section id="sobre-mi" class="hero">
-        <div class="hero-content">
-            <h2>Hola, soy Brian</h2>
-            <p>Programador Full Stack recibido en Argentina Programa (2022) y estudiante de desarrollo de software. En mi día a día me desempeño en el ámbito administrativo, enfocado en la verificación de datos y la optimización de procesos, combinando esa experiencia con mi pasión por el diseño de interfaces web modernas y funcionales.</p>
-            <a href="#contacto" class="btn">Contáctame</a>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow"><span>01</span> SOFTWARE DEVELOPER / PORTFOLIO</p>
+
+                <h1 id="hero-title">
+                    Hola, soy<br>
+                    <strong>Brian David<br>Lavandera</strong><span class="cursor">_</span>
+                </h1>
+
+                <p class="hero-description">
+                    Estudiante de Desarrollo de Software y programador Full Stack.
+                    Me interesa transformar problemas en soluciones mediante código,
+                    lógica y aprendizaje constante.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contacto">Hablemos <span>→</span></a>
+                    <a class="btn btn-secondary" href="https://github.com/brianlavandera3"
+                       target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                </div>
+
+                <div class="status-line">
+                    <span class="status-dot"></span>
+                    <span>STATUS:</span> LEARNING &amp; BUILDING
+                    <span class="status-location">ARGENTINA · LA PLATA</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <div class="frame-label top-left">USER_PROFILE.exe</div>
+                    <div class="frame-label bottom-right">ACCESS_GRANTED</div>
+                    <img src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b"
+                         alt="Foto de perfil de Brian David Lavandera">
+                </div>
+            </div>
+        </section>
+
+        <section class="terminal-section" aria-labelledby="terminal-title">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">brian@portfolio:~</span>
+                </div>
+
+                <div class="terminal-body">
+                    <p><span class="terminal-prompt">brian@portfolio:~$</span> whoami</p>
+                    <p class="terminal-output">Brian David Lavandera — Software Developer in progress.</p>
+                    <p><span class="terminal-prompt">brian@portfolio:~$</span> cat current_status.txt</p>
+                    <p class="terminal-output">
+                        Studying Software Development · Building web projects · Learning every day
+                    </p>
+                    <p><span class="terminal-prompt">brian@portfolio:~$</span> <span class="cursor-small">_</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="section-number">02 / SKILLS</p>
+                <h2 id="skills-title">Lo que estoy construyendo.</h2>
+                <p>Conocimientos y áreas en las que vengo desarrollándome.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <span class="card-number">01</span>
+                    <h3>Full Stack</h3>
+                    <p>Desarrollo de aplicaciones web combinando interfaz, lógica y datos.</p>
+                    <div class="skill-tags"><span>Frontend</span><span>Backend</span><span>Web</span></div>
+                </article>
+
+                <article class="skill-card featured">
+                    <div class="skill-icon">JS</div>
+                    <span class="card-number">02</span>
+                    <h3>JavaScript</h3>
+                    <p>Interfaces dinámicas, DOM, eventos y lógica para experiencias interactivas.</p>
+                    <div class="skill-tags"><span>JS</span><span>DOM</span><span>Events</span></div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">☕</div>
+                    <span class="card-number">03</span>
+                    <h3>Java</h3>
+                    <p>Programación orientada a objetos, algoritmos y resolución de problemas.</p>
+                    <div class="skill-tags"><span>POO</span><span>Logic</span><span>Backend</span></div>
+                </article>
+            </div>
+
+            <div class="stack-box">
+                <div>
+                    <p class="mini-label">TECH STACK</p>
+                    <h3>Herramientas que forman parte de mi camino.</h3>
+                </div>
+                <div class="stack-list">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    <span>Java</span><span>SQL</span><span>MySQL</span>
+                    <span>Git</span><span>GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="recorrido" class="section" aria-labelledby="journey-title">
+            <div class="section-heading">
+                <p class="section-number">03 / JOURNEY</p>
+                <h2 id="journey-title">Mi recorrido.</h2>
+                <p>Algunos momentos de mi formación dentro de la programación.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-line"><span></span></div>
+                    <div class="timeline-content">
+                        <h3>Argentina Programa 4.0</h3>
+                        <p>Formación como Programador Full Stack y primeros pasos en el desarrollo de software.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">ACTUAL</div>
+                    <div class="timeline-line"><span></span></div>
+                    <div class="timeline-content">
+                        <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+                        <p>Continuo mi formación profundizando programación, bases de datos, lógica y desarrollo de proyectos.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">NEXT</div>
+                    <div class="timeline-line"><span></span></div>
+                    <div class="timeline-content">
+                        <h3>Seguir construyendo</h3>
+                        <p>Mi objetivo es seguir aprendiendo, crear proyectos propios y convertir conocimientos en experiencia.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="personal" class="section" aria-labelledby="personal-title">
+            <div class="section-heading">
+                <p class="section-number">04 / BEYOND CODE</p>
+                <h2 id="personal-title">Más allá del código.</h2>
+            </div>
+
+            <div class="personal-container">
+                <div class="personal-text">
+                    <p>
+                        No todo ocurre frente al editor. En mi tiempo libre disfruto
+                        los videojuegos, la estrategia y el cine. También me gusta
+                        experimentar con pequeños proyectos y prototipos para
+                        convertir ideas en algo concreto.
+                    </p>
+
+                    <div class="interest-grid">
+                        <div><span>01</span><strong>Videojuegos</strong></div>
+                        <div><span>02</span><strong>Estrategia</strong></div>
+                        <div><span>03</span><strong>Cine</strong></div>
+                        <div><span>04</span><strong>Proyectos</strong></div>
+                    </div>
+                </div>
+
+                <div class="personal-img">
+                    <img src="https://i.postimg.cc/QxZn3LkF/mario-dance-gangnam-style.gif"
+                         alt="Mario bailando, representación del interés personal por los videojuegos"
+                         loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <p class="section-number">05 / CONTACT</p>
+                <h2 id="contact-title">Abramos una conexión.</h2>
+                <p>Si querés contactarme, podés dejarme un mensaje.</p>
+            </div>
+
+            <form action="#" method="post" aria-label="Formulario de contacto">
+                <div class="form-header">CONTACT_PROTOCOL.exe <span>● ONLINE</span></div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">&gt; nombre</label>
+                        <input type="text" id="nombre" name="nombre"
+                               autocomplete="name" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">&gt; email</label>
+                        <input type="email" id="email" name="email"
+                               autocomplete="email" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">&gt; mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6"
+                              placeholder="Escribí tu mensaje..." required></textarea>
+                </div>
+
+                <button class="btn btn-primary submit-btn" type="submit">
+                    EXECUTE MESSAGE <span>→</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="footer-title">&gt; BRIAN.L</p>
+            <p class="footer-copy">Portfolio personal · Software Development</p>
         </div>
-        <div class="hero-img">
-            <div class="img-container">
-                <!-- Foto normal inicial -->
-                <img id="profile-img" src="https://lh3.googleusercontent.com/d/13US4rfOD4KHPhLHBK6zN7cgxaks_h8-b" alt="Foto de perfil de profesional">
-            </div>
-        </div>
-    </section>
+        <a class="github-link" href="https://github.com/brianlavandera3"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </footer>
 
-    <section id="habilidades" class="skills">
-        <h2>Mis Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Desarrollo Full Stack</h3>
-                <p>Creación de aplicaciones web completas, conectando interfaces responsivas con la lógica del servidor y bases de datos.</p>
-            </div>
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Desarrollo dinámico de interfaces, manipulación del DOM y lógica de programación moderna para la web.</p>
-            </div>
-            <div class="skill-card">
-                <h3>Java</h3>
-                <p>Desarrollo backend orientado a objetos, estructuración de sistemas y lógica robusta de programación.</p>
-            </div>
-        </div>
-    </section>
+    <script>
+        // Fondo Matrix: se mantiene sutil para reforzar la identidad visual sin dificultar la lectura.
+        const canvas = document.getElementById("matrix-canvas");
+        const ctx = canvas.getContext("2d");
+        const symbols = ["01", "10", "{}", "</>", "JS", "SQL", "JAVA", "=>", "&&", "||", "0x", "null"];
+        let drops = [];
+        const fontSize = 13;
 
-    <section id="personal" class="personal-section">
-        <h2>Sección Personal</h2>
-        <div class="personal-container">
-            <div class="personal-text">
-                <p>En mi tiempo libre me gusta desconectar un poco del estudio creando pequeños prototipos y experimentando con el desarrollo de videojuegos. Disfruto mucho probando nuevas tecnologías, armando lógicas de juego y resolviendo desafíos de lógica y estrategia por pura diversión.</p>
-            </div>
-            <div class="personal-img"></div>
-        </div>
-    </section>
+        function resizeCanvas() {
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            canvas.width = window.innerWidth * dpr;
+            canvas.height = window.innerHeight * dpr;
+            canvas.style.width = `${window.innerWidth}px`;
+            canvas.style.height = `${window.innerHeight}px`;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="tu@correo.com">
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
-            </div>
-
-            <button type="submit" class="btn">Enviar Mensaje</button>
-        </form>
-    </section>
-</main>
-
-<footer class="footer-portfolio">
-    <p>&copy; Gracias por visitarme, puede seguirme en mi GitHub.</p>
-    <a href="https://github.com/brianlavandera3" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Brian Lavandera">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="40" height="40">
-            <path fill="currentColor" d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/>
-        </svg>
-    </a>
-</footer>
-
-<!-- SCRIPT COMPLETO -->
-<script>
-const canvas = document.getElementById('matrix-canvas');
-const ctx = canvas.getContext('2d');
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const codeSymbols = [
-    'class', 'public', 'private', 'void', 'int', 'String', 'var', 'let', 'const', 
-    'async', 'await', 'return', 'if', 'else', 'for', 'while', 'new', 'this', 
-    '=>', '==', '===', '!=', '++', '--', '&&', '||', '{}', '[]', '()', ';', 
-    'Console.WriteLine', 'console.log', 'System.out.println', 'try', 'catch', 'null',
-    '#error', '0xDEADBEEF', 'undefined', 'NaN', 'Exception'
-];
-
-const fontSize = 12;
-const columns = Math.floor(canvas.width / 55); 
-
-const rainDrops = [];
-for (let x = 0; x < columns; x++) {
-    rainDrops[x] = {
-        x: x * 55 + (Math.random() * 20 - 10),
-        y: Math.random() * canvas.height,
-        speed: Math.random() * 2.5 + 2,
-        text: codeSymbols[Math.floor(Math.random() * codeSymbols.length)],
-        glitchTimer: 0
-    };
-}
-
-// Colores de los temas (sin cian)
-const colores = ['#eab308', '#ef4444', '#ff00ff', '#0F0'];
-
-// Fotos sincronizadas con los colores
-const fotos = [
-    'https://lh3.googleusercontent.com/d/1isqRsMEZBWNMPweWzoeaa8s108_pn8Zk', // Amarillo (#eab308)
-    'https://lh3.googleusercontent.com/d/1KVdBH0uUtc29l6zPeuMrIZAITofvhgu1', // Rojo (#ef4444)
-    'https://lh3.googleusercontent.com/d/179MP_Cf1hx6ydQicZrbJWzWjsZvCqBTl', // Fucsia (#ff00ff)
-    'https://lh3.googleusercontent.com/d/1Naw2Q5hYvy03yNSh5FCp3wzy3zgr8REm'  // Verde (#0F0)
-];
-
-let indiceColor = -1; // -1 significa estado inicial (foto normal y celeste por defecto)
-const profileImg = document.getElementById('profile-img');
-
-const mouse = {
-    x: null,
-    y: null,
-    radius: 140
-};
-
-window.addEventListener('mousemove', (event) => {
-    mouse.x = event.clientX;
-    mouse.y = event.clientY;
-});
-
-window.addEventListener('mouseout', () => {
-    mouse.x = null;
-    mouse.y = null;
-});
-
-function draw() {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.12)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.font = 'bold ' + fontSize + 'px monospace';
-
-    for (let i = 0; i < rainDrops.length; i++) {
-        let drop = rainDrops[i];
-        
-        let renderX = drop.x;
-        let renderY = drop.y;
-        let drawText = drop.text;
-
-        drop.glitchTimer++;
-        if (drop.glitchTimer > 30 && Math.random() < 0.15) {
-            drawText = codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
-            renderX += (Math.random() * 16 - 8);
-            drop.glitchTimer = 0;
+            const columns = Math.ceil(window.innerWidth / 62);
+            drops = Array.from({ length: columns }, () => ({
+                y: Math.random() * window.innerHeight,
+                speed: Math.random() * 1.3 + 0.7,
+                opacity: Math.random() * 0.18 + 0.06,
+                symbol: symbols[Math.floor(Math.random() * symbols.length)]
+            }));
         }
 
-        let currentColor = (indiceColor === -1) ? '#38bdf8' : colores[indiceColor];
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(3, 7, 10, 0.16)";
+            ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+            ctx.font = `500 ${fontSize}px "JetBrains Mono", monospace`;
 
-        if (mouse.x !== null && mouse.y !== null) {
-            let dx = renderX - mouse.x;
-            let dy = renderY - mouse.y;
-            let distance = Math.sqrt(dx * dx + dy * dy);
+            drops.forEach((drop, index) => {
+                ctx.fillStyle = `rgba(0, 255, 65, ${drop.opacity})`;
+                ctx.fillText(drop.symbol, index * 62, drop.y);
+                drop.y += drop.speed;
 
-            if (distance < mouse.radius) {
-                let angle = Math.atan2(dy, dx);
-                let force = (mouse.radius - distance) / mouse.radius;
-                renderX += Math.cos(angle) * force * 55;
-                renderY += Math.sin(angle) * force * 55;
-                ctx.fillStyle = '#ffffff'; 
-            } else {
-                ctx.fillStyle = currentColor;
-            }
-        } else {
-            ctx.fillStyle = currentColor;
+                if (drop.y > window.innerHeight + 20) {
+                    drop.y = -20;
+                    drop.symbol = symbols[Math.floor(Math.random() * symbols.length)];
+                }
+            });
+
+            requestAnimationFrame(drawMatrix);
         }
 
-        ctx.fillText(drawText, renderX, renderY);
+        resizeCanvas();
+        drawMatrix();
+        window.addEventListener("resize", resizeCanvas);
 
-        drop.y += drop.speed;
+        const menuToggle = document.getElementById("menu-toggle");
+        const mainNav = document.getElementById("main-nav");
+        const navLinks = document.querySelectorAll("#main-nav a");
 
-        if (drop.y > canvas.height + 20) {
-            drop.y = -20;
-            drop.text = codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
-            drop.speed = Math.random() * 2.5 + 2;
+        function closeMenu() {
+            mainNav.classList.remove("activo");
+            menuToggle.classList.remove("activo");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Abrir menú");
+            document.body.classList.remove("menu-abierto");
         }
-    }
-}
 
-setInterval(draw, 25);
+        menuToggle.addEventListener("click", () => {
+            const open = mainNav.classList.toggle("activo");
+            menuToggle.classList.toggle("activo", open);
+            menuToggle.setAttribute("aria-expanded", String(open));
+            menuToggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+            document.body.classList.toggle("menu-abierto", open);
+        });
 
-const heroText = document.querySelector('.hero-content h2');
-const originalText = "Hola, soy Brian";
-let charIndex = 0;
+        navLinks.forEach(link => link.addEventListener("click", closeMenu));
 
-function typeEffect() {
-    if (heroText) {
-        if (charIndex < originalText.length) {
-            heroText.textContent = originalText.substring(0, charIndex + 1) + "_";
-            charIndex++;
-            setTimeout(typeEffect, 100);
-        } else {
-            heroText.textContent = originalText;
-        }
-    }
-}
-typeEffect();
-
-function hexToRgb(hex) {
-    let r = 0, g = 0, b = 0;
-    if (hex.length == 4) {
-        r = parseInt(hex[1]+hex[1], 16); g = parseInt(hex[2]+hex[2], 16); b = parseInt(hex[3]+hex[3], 16);
-    } else if (hex.length == 7) {
-        r = parseInt(hex[1]+hex[2], 16); g = parseInt(hex[3]+hex[4], 16); b = parseInt(hex[5]+hex[6], 16);
-    }
-    return `${r}, ${g}, ${b}`;
-}
-
-// Al hacer clic cambia de color y de foto secuencialmente
-window.addEventListener('click', (e) => {
-    // Evitar que el menú hamburguesa o sus links cambien los colores al clickear
-    if (e.target.closest('.menu-toggle') || e.target.closest('#main-nav')) return;
-
-    indiceColor = (indiceColor + 1) % colores.length;
-    let color = colores[indiceColor];
-    
-    document.documentElement.style.setProperty('--accent-color', color);
-    document.documentElement.style.setProperty('--accent-rgb', hexToRgb(color));
-
-    if (profileImg) {
-        profileImg.style.opacity = '0';
-        setTimeout(() => {
-            profileImg.src = fotos[indiceColor];
-            profileImg.style.opacity = '1';
-        }, 150);
-    }
-});
-
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-
-// --- LÓGICA DEL MENÚ HAMBURGUESA ---
-const menuToggle = document.getElementById('menu-toggle');
-const mainNav = document.getElementById('main-nav');
-const navLinks = document.querySelectorAll('#main-nav ul li a');
-
-// Abrir/Cerrar menú al tocar el botón hamburguesa
-menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('activo');
-    menuToggle.classList.toggle('activo');
-    
-    // Accesibilidad
-    let expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', !expanded);
-});
-
-// Cerrar el menú automáticamente cuando se elige una sección
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mainNav.classList.remove('activo');
-        menuToggle.classList.remove('activo');
-        menuToggle.setAttribute('aria-expanded', 'false');
-    });
-});
-</script>
-
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape") closeMenu();
+        });
+    </script>
 </body>
 </html>
