@@ -23,11 +23,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* Evita que el menú fijo tape los títulos al hacer scroll */
-}
-
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -81,7 +76,7 @@ body::after {
     height: 100vh;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.22;
+    opacity: 0.34;
     mix-blend-mode: screen;
 }
 
@@ -96,6 +91,22 @@ main,
 ::selection {
     background: var(--accent);
     color: #001b07;
+}
+
+/* Tipografía Mono compartida */
+.logo,
+.eyebrow,
+.section-number,
+.story-label,
+.timeline-date,
+.card-number,
+.skill-tags span,
+label,
+.github-contact,
+.site-footer p,
+.status-line,
+.frame-label {
+    font-family: "JetBrains Mono", monospace;
 }
 
 /* =========================================================
@@ -270,37 +281,44 @@ main {
     letter-spacing: -0.07em;
 }
 
-.hero h1 strong {
-    display: block;
+/* Texto de presentación */
+.typing-wrapper {
+    display: inline;
+}
+
+#typing-greeting,
+#typing-name {
+    display: inline;
+}
+
+/* Solo el nombre tiene el efecto glow */
+#typing-name {
     color: var(--text);
     font-weight: 800;
-    text-shadow: 0 0 15px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.12);
-    transition: color 0.3s ease;
+    cursor: default;
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease,
+        transform 0.3s ease;
 }
 
-/* Efecto glitch al pasar el cursor sobre el nombre */
-@keyframes glitch-anim {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
-}
-
-.hero h1 strong:hover {
-    animation: glitch-anim 0.3s ease infinite;
+#typing-name:hover {
     color: var(--accent);
+    transform: translateX(3px);
+    text-shadow:
+        0 0 6px rgba(0, 255, 65, 0.95),
+        0 0 15px rgba(0, 255, 65, 0.7),
+        0 0 30px rgba(0, 255, 65, 0.45),
+        0 0 55px rgba(0, 255, 65, 0.25);
 }
 
+/* Cursor controlado por JavaScript */
 .cursor {
+    display: inline-block;
+    margin-left: 4px;
     color: var(--accent);
-    animation: blink 1s steps(1) infinite;
     text-shadow: 0 0 10px var(--accent);
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
+    transition: opacity 0.18s ease;
 }
 
 .hero-description {

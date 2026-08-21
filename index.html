@@ -148,12 +148,8 @@
 
             <h1>
 
-                <span
-                    id="typing-name">
-                </span>
-
-                <span class="cursor">
-                    _
+                <span class="typing-wrapper">
+                    <span id="typing-greeting"></span><span id="typing-name"></span><span class="cursor">_</span>
                 </span>
 
             </h1>
@@ -1315,7 +1311,7 @@ function resizeMatrix() {
             speed: 0.18 + Math.random() * 0.35,
             size: fontSize,
             symbol: javaSymbols[Math.floor(Math.random() * javaSymbols.length)],
-            opacity: 0.10 + Math.random() * 0.16
+            opacity: 0.16 + Math.random() * 0.20
         });
     }
 }
@@ -1349,80 +1345,73 @@ drawMatrix();
 
 
 /* =====================================================
-   TYPING COMPLETO
+   TYPING — PRESENTACIÓN INICIAL
    ===================================================== */
 
-const typingName =
-    document.getElementById(
-        "typing-name"
-    );
+const typingGreeting = document.getElementById("typing-greeting");
+const typingName = document.getElementById("typing-name");
+const cursor = document.querySelector(".cursor");
 
+const greetingText = "Hola, soy ";
+const nameText = "Brian David Lavandera";
 
-const fullText =
-    "Hola, soy Brian David \n Lavandera";
+let greetingIndex = 0;
+let nameIndex = 0;
+let cursorVisible = true;
+let normalBlinkStarted = false;
 
+/* Mientras escribe: parpadeo muy sutil */
+const typingCursorInterval = setInterval(() => {
+    if (!cursor || normalBlinkStarted) return;
 
-let typingIndex =
-    0;
+    cursorVisible = !cursorVisible;
+    cursor.style.opacity = cursorVisible ? "1" : "0.55";
+}, 1100);
 
+/* Cuando termina: pequeña pausa y luego parpadeo normal */
+function startNormalCursorBlink() {
+    if (!cursor || normalBlinkStarted) return;
 
-function typeName() {
+    normalBlinkStarted = true;
+    clearInterval(typingCursorInterval);
 
-    if (
-        typingIndex <
-        fullText.length
-    ) {
+    cursor.style.opacity = "1";
 
-        const character =
-            fullText.charAt(
-                typingIndex
-            );
-
-
-        if (
-            character === "\n"
-        ) {
-
-            typingName.innerHTML +=
-                "<br>";
-
-        } else {
-
-            typingName.textContent +=
-                character;
-
-        }
-
-
-        typingIndex++;
-
-
-        setTimeout(
-            typeName,
-            75
-        );
-
-    }
-
+    setInterval(() => {
+        cursorVisible = !cursorVisible;
+        cursor.style.opacity = cursorVisible ? "1" : "0";
+    }, 600);
 }
 
+function typeGreeting() {
+    if (greetingIndex < greetingText.length) {
+        typingGreeting.textContent += greetingText.charAt(greetingIndex);
+        greetingIndex++;
+        setTimeout(typeGreeting, 75);
+        return;
+    }
+
+    typeName();
+}
+
+function typeName() {
+    if (nameIndex < nameText.length) {
+        typingName.textContent += nameText.charAt(nameIndex);
+        nameIndex++;
+        setTimeout(typeName, 75);
+        return;
+    }
+
+    setTimeout(startNormalCursorBlink, 350);
+}
 
 /* =====================================================
    COMIENZO DEL TYPING
    ===================================================== */
 
-window.addEventListener(
-    "load",
-    () => {
-
-        setTimeout(
-            typeName,
-            400
-        );
-
-    }
-);
-
+window.addEventListener("load", () => {
+    setTimeout(typeGreeting, 400);
+});
 
 </script>
 
