@@ -201,6 +201,8 @@ label,
    ========================================================= */
 .menu-toggle {
     display: none;
+    position: relative;
+    z-index: 1002;
     width: 30px;
     height: 23px;
     padding: 0;
@@ -994,35 +996,92 @@ textarea {
    TABLET
    ========================================================= */
 @media (max-width: 900px) {
-    .menu-toggle { display: flex; }
+    .menu-toggle {
+        display: flex;
+        flex: 0 0 auto;
+        width: 34px;
+        height: 26px;
+        position: relative;
+        z-index: 1002;
+    }
 
+    /*
+       MENÚ MOBILE ROBUSTO
+       - El header queda siempre visible.
+       - El panel comienza debajo del header.
+       - El panel ocupa todo el viewport restante.
+       - Nunca queda mezclado con el contenido del sitio.
+    */
     #main-nav {
         position: fixed;
-        inset: 0;
-        z-index: 1000;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100dvh - 70px);
+        z-index: 999;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(3, 7, 10, 0.97);
+
+        padding: 40px 24px 50px;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+
+        background: rgba(3, 7, 10, 0.985);
         backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
         transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
-        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        pointer-events: none;
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease,
+            visibility 0.3s ease;
     }
 
     #main-nav.activo {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
+        pointer-events: auto;
     }
 
     #main-nav ul {
+        width: min(100%, 420px);
+        display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4rem;
+        padding: 0;
+        margin: 0;
     }
 
-    #main-nav a { font-size: 1.1rem; }
+    #main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #main-nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0.55rem 1rem;
+        font-size: clamp(1rem, 3vw, 1.15rem);
+        letter-spacing: 0.04em;
+    }
+
+    /* Evita que la página se mueva detrás del menú abierto. */
+    body:has(#main-nav.activo) {
+        overflow: hidden;
+    }
 
     .hero-main {
         flex-direction: column-reverse;
@@ -1069,6 +1128,39 @@ textarea {
    MOBILE
    ========================================================= */
 @media (max-width: 600px) {
+    #main-nav {
+        top: 64px;
+        height: calc(100dvh - 64px);
+        padding: 32px 18px 40px;
+    }
+
+    .site-header {
+        min-height: 64px;
+        padding: 0 18px;
+    }
+
+    .menu-toggle {
+        width: 32px;
+        height: 24px;
+    }
+
+    .menu-toggle.activo span:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .menu-toggle.activo span:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    #main-nav ul {
+        gap: 1rem;
+    }
+
+    #main-nav a {
+        min-height: 46px;
+        font-size: 1.05rem;
+    }
+
     .site-header { padding: 0 20px; }
     main { padding: 70px 18px 10px; }
     .hero { padding: 60px 0 80px; }
