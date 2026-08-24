@@ -64,8 +64,6 @@ body::after {
     opacity: 0.4;
 }
 
-
-
 /* =========================================================
    MATRIX SUTIL - CAPA SOBRE EL FONDO
    ========================================================= */
@@ -80,7 +78,6 @@ body::after {
     mix-blend-mode: screen;
 }
 
-/* El Matrix queda detrás de todo el contenido real */
 .site-header,
 main,
 .site-footer {
@@ -93,7 +90,6 @@ main,
     color: #001b07;
 }
 
-/* Tipografía Mono compartida */
 .logo,
 .eyebrow,
 .section-number,
@@ -283,7 +279,6 @@ main {
     letter-spacing: -0.07em;
 }
 
-/* Texto de presentación */
 .typing-wrapper {
     display: inline;
 }
@@ -293,7 +288,6 @@ main {
     display: inline;
 }
 
-/* Solo el nombre tiene el efecto glow */
 #typing-name {
     color: var(--text);
     font-weight: 800;
@@ -314,7 +308,6 @@ main {
         0 0 55px rgba(0, 255, 65, 0.25);
 }
 
-/* Cursor controlado por JavaScript */
 .cursor {
     display: inline-block;
     margin-left: 4px;
@@ -613,7 +606,7 @@ main {
 }
 
 /* =========================================================
-   HABILIDADES (Con efecto Spotlight)
+   HABILIDADES
    ========================================================= */
 .skills-grid {
     display: grid;
@@ -648,7 +641,6 @@ main {
     transition: opacity 0.3s ease;
 }
 
-/* Efecto Spotlight que sigue al cursor */
 .skill-card::after {
     content: "";
     position: absolute;
@@ -669,13 +661,8 @@ main {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(0, 255, 65, 0.08);
 }
 
-.skill-card:hover::before {
-    opacity: 1;
-}
-
-.skill-card:hover::after {
-    opacity: 1;
-}
+.skill-card:hover::before { opacity: 1; }
+.skill-card:hover::after { opacity: 1; }
 
 .skill-icon {
     width: 46px;
@@ -931,6 +918,47 @@ textarea {
 }
 
 /* =========================================================
+   CARTEL DE FEEDBACK DE FORMULARIO
+   ========================================================= */
+.form-feedback {
+    display: none;
+    padding: 0.85rem 1.1rem;
+    border-radius: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.76rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-feedback.success {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid var(--accent);
+    background: rgba(0, 255, 65, 0.08);
+    color: var(--text);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.form-feedback.success::before {
+    content: ">";
+    color: var(--accent);
+    font-weight: 800;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 .site-footer {
@@ -957,7 +985,7 @@ textarea {
 }
 
 /* =========================================================
-   ANIMACIÓN DE ENTRADA (Controlada por JS al hacer Scroll)
+   ANIMACIÓN DE ENTRADA
    ========================================================= */
 .reveal-item {
     opacity: 0;
@@ -970,7 +998,6 @@ textarea {
     transform: translateY(0);
 }
 
-/* Delays en cascada */
 .hero-content.reveal-item { transition-delay: 0.15s; }
 .hero-visual.reveal-item  { transition-delay: 0.35s; }
 
@@ -1005,13 +1032,6 @@ textarea {
         z-index: 1002;
     }
 
-    /*
-       MENÚ MOBILE ROBUSTO
-       - El header queda siempre visible.
-       - El panel comienza debajo del header.
-       - El panel ocupa todo el viewport restante.
-       - Nunca queda mezclado con el contenido del sitio.
-    */
     #main-nav {
         position: fixed;
         top: 70px;
@@ -1021,28 +1041,20 @@ textarea {
         width: 100%;
         height: calc(100dvh - 70px);
         z-index: 999;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         padding: 40px 24px 50px;
         overflow-y: auto;
         overscroll-behavior: contain;
-
         background: rgba(3, 7, 10, 0.985);
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
-
         transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-
-        transition:
-            transform 0.3s ease,
-            opacity 0.3s ease,
-            visibility 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     }
 
     #main-nav.activo {
@@ -1078,7 +1090,6 @@ textarea {
         letter-spacing: 0.04em;
     }
 
-    /* Evita que la página se mueva detrás del menú abierto. */
     body:has(#main-nav.activo) {
         overflow: hidden;
     }
@@ -1152,16 +1163,13 @@ textarea {
         transform: translateY(-11px) rotate(-45deg);
     }
 
-    #main-nav ul {
-        gap: 1rem;
-    }
+    #main-nav ul { gap: 1rem; }
 
     #main-nav a {
         min-height: 46px;
         font-size: 1.05rem;
     }
 
-    .site-header { padding: 0 20px; }
     main { padding: 70px 18px 10px; }
     .hero { padding: 60px 0 80px; }
     .hero h1 { font-size: clamp(2.7rem, 13vw, 4rem); }
