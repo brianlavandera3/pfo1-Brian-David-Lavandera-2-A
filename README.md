@@ -12,20 +12,20 @@ La propuesta busca combinar una estética tecnológica inspirada en Matrix con u
 
 ## Tecnologías Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
-- CSS Grid
-- Flexbox
-- Canvas API
+* HTML5
+* CSS3
+* JavaScript
+* Google Fonts
+* CSS Grid
+* Flexbox
+* Canvas API
 
 ---
 
 ## Enlaces
 
-- **URL de Vercel:** https://pfo1-brian-david-lavandera-2-a.vercel.app/
-- **Perfil de GitHub:** https://github.com/brianlavandera3
+* **URL de Vercel:** https://pfo1-brian-david-lavandera-2-a.vercel.app/
+* **Perfil de GitHub:** https://github.com/brianlavandera3/pfo1-Brian-David-Lavandera-2-A
 
 ---
 
@@ -37,14 +37,14 @@ La intención fue utilizar elementos visuales asociados al código, las terminal
 
 ### Paleta de colores
 
-- Fondo oscuro para generar contraste y una estética tecnológica.
-- Verde brillante como color principal de acento, inspirado en la estética de Matrix.
-- Tonos verdes y grises secundarios para jerarquizar la información sin saturar visualmente la interfaz.
+* Fondo oscuro para generar contraste y una estética tecnológica.
+* Verde brillante como color principal de acento, inspirado en la estética de Matrix.
+* Tonos verdes y grises secundarios para jerarquizar la información sin saturar visualmente la interfaz.
 
 ### Tipografías
 
-- **Inter:** utilizada para títulos, textos generales y contenido principal.
-- **JetBrains Mono:** utilizada en elementos relacionados con código, etiquetas, números, estados y detalles visuales de estilo terminal.
+* **Inter:** utilizada para títulos, textos generales y contenido principal.
+* **JetBrains Mono:** utilizada en elementos relacionados con código, etiquetas, números, estados y detalles visuales de estilo terminal.
 
 ### Variables CSS
 
@@ -57,6 +57,11 @@ Esto permite mantener una mayor coherencia visual y facilita el mantenimiento y 
 Debido a que la estética de Matrix puede resultar visualmente intensa, el fondo se mantuvo sutil mediante transparencias, scanlines, gradientes y un canvas con símbolos relacionados con la programación.
 
 El efecto de fondo utiliza una opacidad reducida y se mantiene detrás del contenido para evitar interferir con la lectura.
+
+### Origen de las Imágenes
+
+* **Fotografía de Perfil:** fotografía de retrato personal alojada de forma remota para optimizar los tiempos de carga y el tamaño del repositorio.
+* **Recurso Animado (GIF):** integración de una animación temática en la sección personal para aportar dinamismo visual y reforzar el perfil creativo sin sobrecargar la experiencia del usuario (origen de GIF internet).
 
 ---
 
@@ -81,12 +86,14 @@ La estructura utiliza elementos semánticos como `header`, `nav`, `main`, `secti
 
 Esto permite mejorar la estructura del documento, facilitar su mantenimiento y favorecer la interpretación del contenido por parte de tecnologías de asistencia.
 
+Además, el archivo `index.html` incluye comentarios explicativos sobre decisiones clave de accesibilidad y maquetación.
+
 ### Maquetación con CSS Grid y Flexbox
 
 Se utilizaron ambas tecnologías de maquetación según las necesidades de cada componente:
 
-- **CSS Grid:** utilizado para organizar estructuras en filas y columnas, como las tarjetas de habilidades, el timeline, la grilla de intereses y la distribución de los campos del formulario.
-- **Flexbox:** empleado para la distribución y alineación de componentes como el encabezado, navegación, contenido principal, botones, formularios y footer.
+* **CSS Grid:** utilizado para organizar estructuras en filas y columnas, como las tarjetas de habilidades, el timeline, la grilla de intereses y la distribución de los campos del formulario.
+* **Flexbox:** empleado para la distribución y alineación de componentes como el encabezado, navegación, contenido principal, botones, formularios y footer.
 
 La combinación de ambas técnicas permite construir una interfaz flexible y adaptable a diferentes tamaños de pantalla.
 
@@ -96,13 +103,13 @@ El diseño utiliza media queries para adaptar la interfaz a tablets, celulares y
 
 Entre los cambios responsive se incluyen:
 
-- Transformación de la navegación en menú hamburguesa.
-- Reorganización del contenido principal.
-- Adaptación de la imagen de perfil.
-- Cambio de columnas a una sola columna en tarjetas y formularios.
-- Ajuste de tamaños de tipografía y espaciados.
-- Adaptación del footer.
-- Reorganización de la sección personal.
+* Transformación de la navegación en menú hamburguesa.
+* Reorganización del contenido principal.
+* Adaptación de la imagen de perfil.
+* Cambio de columnas a una sola columna en tarjetas y formularios.
+* Ajuste de tamaños de tipografía y espaciados.
+* Adaptación del footer.
+* Reorganización de la sección personal.
 
 También se realizaron ajustes específicos para evitar superposiciones y problemas de visualización en resoluciones pequeñas.
 
@@ -110,15 +117,16 @@ También se realizaron ajustes específicos para evitar superposiciones y proble
 
 El sitio incorpora diferentes recursos desarrollados con JavaScript:
 
-- **Efecto de escritura:** presentación dinámica del saludo y nombre.
-- **Cursor animado:** efecto de parpadeo al finalizar la escritura.
-- **Menú mobile:** apertura y cierre mediante el botón hamburguesa.
-- **Cierre con tecla Escape:** permite cerrar el menú utilizando el teclado.
-- **Scroll suave:** navegación animada entre las diferentes secciones.
-- **Barra de progreso:** indica visualmente el avance del usuario durante el desplazamiento.
-- **Animaciones de entrada:** elementos que aparecen progresivamente al ingresar en el viewport.
-- **Spotlight:** efecto visual que sigue la posición del cursor sobre las tarjetas de habilidades.
-- **Canvas:** fondo animado con símbolos relacionados con programación.
+* **Efecto de escritura:** presentación dinámica del saludo y nombre.
+* **Cursor animado:** efecto de parpadeo al finalizar la escritura.
+* **Menú mobile:** apertura y cierre mediante el botón hamburguesa.
+* **Cierre con tecla Escape:** permite cerrar el menú utilizando el teclado.
+* **Scroll suave:** navegación animada entre las diferentes secciones.
+* **Barra de progreso:** indica visualmente el avance del usuario durante el desplazamiento.
+* **Animaciones de entrada:** elementos que aparecen progresivamente al ingresar en el viewport.
+* **Spotlight:** efecto visual que sigue la posición del cursor sobre las tarjetas de habilidades.
+* **Canvas:** fondo animado con símbolos relacionados con programación.
+* **Interacción del formulario:** validación básica de los campos y simulación visual del envío.
 
 ### Fondo Matrix
 
@@ -136,14 +144,13 @@ El efecto fue diseñado para ser sutil y no afectar la legibilidad del contenido
 
 Se incorporaron diferentes criterios básicos de accesibilidad:
 
-- Atributos `alt` descriptivos en las imágenes.
-- Etiquetas `label` correctamente asociadas a los campos del formulario.
-- Estados `:hover` y `:focus` para mejorar la interacción.
-- Uso de atributos ARIA en elementos interactivos cuando resulta pertinente.
-- Navegación mediante teclado.
-- Cierre del menú mediante la tecla `Escape`.
-- Soporte para `prefers-reduced-motion`, permitiendo reducir las animaciones cuando el usuario tiene configurada esta preferencia en su sistema.
-- Contraste visual entre el fondo y el contenido para favorecer la legibilidad.
+* Atributos `alt` descriptivos en las imágenes.
+* Etiquetas `label` correctamente asociadas a los campos del formulario.
+* Estados `:hover` y `:focus` para mejorar la interacción.
+* Uso de atributos ARIA en elementos interactivos cuando resulta pertinente (`aria-expanded`, `aria-controls`, `aria-hidden`).
+* Navegación mediante teclado.
+* Cierre del menú mediante la tecla `Escape`.
+* Contraste visual entre el fondo y el contenido para favorecer la legibilidad.
 
 ---
 
@@ -151,13 +158,21 @@ Se incorporaron diferentes criterios básicos de accesibilidad:
 
 El formulario incluye los siguientes campos:
 
-- Nombre
-- Email
-- Mensaje
+* Nombre
+* Email
+* Mensaje
 
 Cada campo cuenta con su correspondiente etiqueta `label` y controles de formulario correctamente identificados.
 
-El objetivo del formulario es presentar una estructura funcional de contacto dentro de la landing.
+### Funcionamiento del formulario
+
+El formulario implementa una **simulación de envío mediante JavaScript**.
+
+Al completar los campos y presionar el botón de envío, se evita el envío real del formulario y se muestra un mensaje de confirmación al usuario. Luego de la simulación, los campos se reinician automáticamente.
+
+Esta implementación se realizó con fines demostrativos dentro de la landing, ya que el proyecto no cuenta con un backend ni con un servicio externo de envío de correos.
+
+El objetivo es demostrar la estructura de un formulario de contacto, la asociación correcta entre etiquetas y campos, la validación básica mediante HTML y la interacción con JavaScript.
 
 ---
 
@@ -177,34 +192,33 @@ Durante el desarrollo de este proyecto utilicé **ChatGPT, en su versión gratui
 
 ### ¿Cómo utilicé la IA?
 
-La herramienta fue utilizada para:
+ChatGPT fue utilizado principalmente durante el proceso de desarrollo para:
 
 - Explorar ideas de diseño y organización visual.
-- Consultar alternativas de maquetación con HTML y CSS.
-- Resolver dudas técnicas específicas.
-- Revisar y detectar posibles problemas de código.
-- Obtener apoyo en la lógica del canvas con estética Matrix.
-- Obtener apoyo para implementar y revisar el efecto de escritura.
-- Analizar y mejorar el comportamiento responsive del menú y otros componentes.
+- Consultar alternativas de implementación con HTML, CSS y JavaScript.
+- Resolver dudas puntuales de sintaxis y lógica.
+- Revisar posibles problemas en el código.
+- Recibir orientación para implementar el efecto Canvas con estética Matrix.
+- Consultar sobre el efecto de escritura y diferentes aspectos del diseño responsive.
+
+La IA se utilizó como una herramienta de apoyo durante el proceso, y no como un reemplazo del desarrollo del proyecto.
 
 ### Experiencia previa
 
-Ya contaba con experiencia utilizando herramientas de inteligencia artificial para resolver dudas de sintaxis, lógica y programación durante mis estudios de desarrollo de software.
+Ya contaba con experiencia utilizando herramientas de inteligencia artificial para realizar consultas relacionadas con programación, especialmente para resolver dudas de sintaxis, lógica y funcionamiento de distintas tecnologías.
 
 ### Criterio y trabajo propio
 
-La IA fue utilizada como herramienta de apoyo y consulta, pero el proyecto fue revisado, probado y adaptado manualmente.
+Las propuestas obtenidas mediante IA fueron analizadas y adaptadas según las necesidades del proyecto. La identidad visual, la estética Matrix, la selección de colores y tipografías, la distribución de las secciones y los componentes, así como las decisiones finales de funcionamiento, fueron definidas durante el desarrollo del proyecto.
 
-Las decisiones relacionadas con la identidad visual, la estética Matrix, la paleta de colores, las tipografías, la distribución de los componentes, las animaciones, la organización de las secciones y diferentes aspectos de accesibilidad fueron definidas y ajustadas durante el desarrollo del proyecto.
+También realicé pruebas y modificaciones manuales para ajustar el comportamiento responsive, la navegación, las animaciones y la accesibilidad.
 
-También se realizaron pruebas en diferentes resoluciones para detectar y corregir problemas de responsive y de navegación.
-
+**La fotografía de perfil no fue generada, modificada ni intervenida mediante inteligencia artificial.**
 ---
 
 ## Datos de la Entrega
 
-- **Materia:**  Front End
-- **Instancia:** PFO1
-- **Período:** 2do Cuatrimestre, 2026
-- **Autor:** Brian David Lavandera
-
+* **Materia:** Front End
+* **Instancia:** PFO1
+* **Período:** 2do Cuatrimestre, 2026
+* **Autor:** Brian David Lavandera

@@ -17,15 +17,17 @@
 
 <body>
 
+    <!-- Comentario 1 (Accesibilidad): aria-hidden="true" oculta el canvas animado de fondo ante lectores de pantalla para priorizar el contenido relevante -->
     <canvas id="matrix-canvas" aria-hidden="true"></canvas>
 
     <header class="site-header">
         <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
         <a href="#inicio" class="logo">
-            <span>&gt;</span> BRIAN.D.L
+            <span>&gt;</span> Brian David Lavandera
         </a>
 
+        <!-- Comentario 2 (Navegación / ARIA): Atributos aria-expanded y aria-controls vinculan dinámicamente el botón hamburguesa con el menú desplegable mobile -->
         <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
             <span></span>
             <span></span>
@@ -131,6 +133,7 @@
             </div>
 
             <div class="skills-grid">
+                <!-- Comentario 3 (Estructura Semántica): Implementación de la etiqueta article para agrupar las tarjetas de habilidades como unidades de contenido independientes -->
                 <article class="skill-card reveal-item">
                     <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
                     <span class="card-number" aria-hidden="true">01</span>
@@ -213,6 +216,7 @@
                 <p>Podés dejarme un mensaje o visitar mi perfil de GitHub.</p>
             </div>
 
+            <!-- Comentario 4 (Accesibilidad en Formularios): Formulario estructurado asociando explícitamente etiquetas label con sus respective inputs mediante el atributo for -->
             <form action="#" method="post" class="reveal-item" aria-label="Formulario de contacto">
                 <div class="form-grid">
                     <div class="form-group">
@@ -243,7 +247,7 @@
     </main>
 
     <footer class="site-footer">
-        <p>&gt; BRIAN.D.L</p>
+        <p>&gt; Brian David Lavandera</p>
         <span>Portfolio personal · Desarrollo de Software</span>
     </footer>
 
